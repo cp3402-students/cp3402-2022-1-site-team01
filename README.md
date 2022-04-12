@@ -1,8 +1,5 @@
 # We are the best team.
 
-#### This sucks. I want to go home.
-
-dgdfgdgdfg
-
-
-nah nah nah nah nah
+Database admin user details for local development:
+username: root
+password: jazztownsville.1
