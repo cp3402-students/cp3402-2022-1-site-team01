@@ -8,6 +8,10 @@ To import the database from a dump file, first do a `git pull` inside the _jazzt
 
 Once you've done that, open up the XAMPP console using the "shell" button.
 
+Remember to create a data base called __jazztownsville_ within the local host before importing data using the command 
+
+Also have Apache and MySQL running or the you will encounter the errors: 1) Unknown port. 2) Unknown database
+
 Inside the XAMPP console, to import data you can use this command:
 
 `mysql -u root jazztownsville < c:\xampp\htdocs\jazztownsville\dumps\dump.sql`
