@@ -52,3 +52,5 @@ wp-content/themes/understrap/phpcs.xml
 wp-content/themes/understrap/dist/
 wp-content/themes/understrap/dist-product/
 wp-content/themes/understrap/**/img
+
+.idea/
