@@ -1,0 +1,54 @@
+# ------------------------------------------------------------------------
+# This file specifies intentionally untracked files that Git should ignore
+# - https://git-scm.com/docs/gitignore
+# ------------------------------------------------------------------------
+
+# Numerous always-ignore extensions
+wp-content/themes/understrap/*.bak
+wp-content/themes/understrap/*.cvs
+wp-content/themes/understrap/*.db
+wp-content/themes/understrap/*.diff
+wp-content/themes/understrap/*.err
+wp-content/themes/understrap/*.log
+wp-content/themes/understrap/*.orig
+wp-content/themes/understrap/*.rej
+wp-content/themes/understrap/*.zip
+wp-content/themes/understrap/
+# Ignore all files and directories starting with . or ~ or ._ or ending with ~
+wp-content/themes/understrap/.*
+wp-content/themes/understrap/~*
+wp-content/themes/understrap/*~
+wp-content/themes/understrap/._*
+# but track
+wp-content/themes/understrap/!.browserslist
+wp-content/themes/understrap/!.editorconfig
+wp-content/themes/understrap/!.gitattributes
+wp-content/themes/understrap/!.github
+wp-content/themes/understrap/!.gitignore
+wp-content/themes/understrap/!.jscsrc
+wp-content/themes/understrap/!.jshintignore
+wp-content/themes/understrap/!.travis.yml
+wp-content/themes/understrap/
+# Ignore all files with .lock extentions
+wp-content/themes/understrap/*.lock
+# but track
+wp-content/themes/understrap/!composer.lock
+wp-content/themes/understrap/
+# OS or Editor files and folders
+wp-content/themes/understrap/*.code-workspace
+wp-content/themes/understrap/*.elc
+wp-content/themes/understrap/*.esproj
+wp-content/themes/understrap/*.komodoproject
+wp-content/themes/understrap/*.sublime*
+wp-content/themes/understrap/*.tmproj*
+wp-content/themes/understrap/
+# Dependencies
+wp-content/themes/understrap/bower_components
+wp-content/themes/understrap/node_modules
+wp-content/themes/understrap/vendor/
+wp-content/themes/understrap/
+# Other UnderStrap specific files and directories
+wp-content/themes/understrap/phpcs.xml
+wp-content/themes/understrap/dist/
+wp-content/themes/understrap/dist-product/
+wp-content/themes/understrap/**/img
