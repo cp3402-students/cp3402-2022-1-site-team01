@@ -50,6 +50,6 @@ wp-content/themes/understrap*/**/img
 # Ignore JetBrains .idea folder
 .idea/
 # Ignore troublesome files.
-wp-content/themes/understrap*/css/*
-wp-content/themes/understrap*/js/*
+wp-content/themes/understrap*/css/*.css
+wp-content/themes/understrap*/js/*.js
 wp-content/themes/understrap*/package_lock.json
