@@ -51,5 +51,6 @@ wp-content/themes/understrap*/**/img
 .idea/
 # Ignore troublesome files.
 wp-content/themes/understrap*/css/*.css
+wp-content/themes/understrap*/css/*.css.map
 wp-content/themes/understrap*/js/*.js
-wp-content/themes/understrap*/package_lock.json
+wp-content/themes/understrap*/package-lock.json
