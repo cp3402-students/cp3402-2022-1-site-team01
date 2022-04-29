@@ -39,6 +39,6 @@ jobs:
             wp post delete $(wp post list --post_type='post' --format=ids) --force
             wp post delete $(wp post list --post_type='page' --format=ids) --force
             wp post delete $(wp post list --post_type='wp_global_styles' --for mat=ids) --force
-            wp import export --authors=create
             wp plugin activate wordpress-importer
+            wp import export --authors=create
             wp theme activate ${{ secrets.THEME }}
