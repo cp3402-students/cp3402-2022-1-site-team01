@@ -48,7 +48,7 @@ jobs:
             npm run dist-build
             mv dist ../jazztownsville
             cd ../jazztownsville
-            cat <<EOT >> style.css
+            cat <<EOT > style.css
             /*
             Theme Name:   Jazz Townsville
             Theme URI:    https://understrap.com
