@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+rm export/* -f
+ls export
+
+../../php/php.exe wp-cli.phar export --dir=export
+
+git add export
