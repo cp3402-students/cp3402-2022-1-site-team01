@@ -34,6 +34,7 @@ jobs:
             whoami
             cd htdocs
             ls -lah
+            git checkout staging
             git pull
             wp import export --authors=create
 
