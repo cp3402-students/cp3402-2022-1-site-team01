@@ -47,7 +47,7 @@ jobs:
             npm run js
             npm run dist-build
             mv dist ../jazztownsville
-            cd jazztownsville
+            cd ../jazztownsville
             cat <<EOT >> style.css
             /*
             Theme Name:   Jazz Townsville
