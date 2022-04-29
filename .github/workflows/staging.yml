@@ -31,8 +31,9 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           script: |
-            whoami
-            ls -lah
+            cd htdocs
+            git pull
+            wp --info
 
       # Runs a set of commands using the runners shell
 #       - name: Run a multi-line script
