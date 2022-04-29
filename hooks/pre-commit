@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+ls
+
 rm export/* -f
 
 ../../php/php.exe wp-cli.phar export --dir=export
