@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/5.9.3" created="2022-04-28 09:48" -->
+	<!-- generator="WordPress/5.9.3" created="2022-04-29 02:51" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -27,13 +27,13 @@
 
 <channel>
 	<title>jazztownsville</title>
-	<link>//localhost:3000/jazztownsville</link>
+	<link>http://localhost/jazztownsville</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Thu, 28 Apr 2022 09:48:21 +0000</pubDate>
+	<pubDate>Fri, 29 Apr 2022 02:51:39 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>//localhost:3000/jazztownsville</wp:base_site_url>
-	<wp:base_blog_url>//localhost:3000/jazztownsville</wp:base_blog_url>
+	<wp:base_site_url>http://localhost/jazztownsville</wp:base_site_url>
+	<wp:base_blog_url>http://localhost/jazztownsville</wp:base_blog_url>
 
 		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[root]]></wp:author_login><wp:author_email><![CDATA[align@y7mail.com]]></wp:author_email><wp:author_display_name><![CDATA[root]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
@@ -62,10 +62,10 @@
 
 		<item>
 		<title><![CDATA[Hello world!]]></title>
-		<link>//localhost:3000/jazztownsville/2022/04/11/hello-world/</link>
+		<link>http://localhost/jazztownsville/2022/04/11/hello-world/</link>
 		<pubDate>Mon, 11 Apr 2022 02:48:59 +0000</pubDate>
 		<dc:creator><![CDATA[root]]></dc:creator>
-		<guid isPermaLink="false">//localhost:3000/jazztownsville/?p=1</guid>
+		<guid isPermaLink="false">http://localhost/jazztownsville/?p=1</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:paragraph -->
 <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
@@ -105,10 +105,10 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 					</item>
 					<item>
 		<title><![CDATA[Sample Page]]></title>
-		<link>//localhost:3000/jazztownsville/sample-page/</link>
+		<link>http://localhost/jazztownsville/sample-page/</link>
 		<pubDate>Mon, 11 Apr 2022 02:48:59 +0000</pubDate>
 		<dc:creator><![CDATA[root]]></dc:creator>
-		<guid isPermaLink="false">//localhost:3000/jazztownsville/?page_id=2</guid>
+		<guid isPermaLink="false">http://localhost/jazztownsville/?page_id=2</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:paragraph -->
 <p>This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>
@@ -127,7 +127,7 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 <!-- /wp:quote -->
 
 <!-- wp:paragraph -->
-<p>As a new WordPress user, you should go to <a href="//localhost:3000/jazztownsville/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>
+<p>As a new WordPress user, you should go to <a href="http://localhost/jazztownsville/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>
 <!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>2</wp:post_id>
@@ -151,17 +151,17 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 							</item>
 					<item>
 		<title><![CDATA[Privacy Policyyyy]]></title>
-		<link>//localhost:3000/jazztownsville/privacy-policy/</link>
+		<link>http://localhost/jazztownsville/privacy-policy/</link>
 		<pubDate>Mon, 11 Apr 2022 02:48:59 +0000</pubDate>
 		<dc:creator><![CDATA[root]]></dc:creator>
-		<guid isPermaLink="false">//localhost:3000/jazztownsville/?page_id=3</guid>
+		<guid isPermaLink="false">http://localhost/jazztownsville/?page_id=3</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:heading -->
 <h2>Who we are</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><strong class="privacy-policy-tutorial">Suggested text: </strong>Our website address is: //localhost:3000/jazztownsville.</p>
+<p><strong class="privacy-policy-tutorial">Suggested text: </strong>Our website address is: http://localhost/jazztownsville.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -273,10 +273,10 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 							</item>
 					<item>
 		<title><![CDATA[Custom Styles]]></title>
-		<link>//localhost:3000/jazztownsville/2022/04/26/wp-global-styles-understrap-child/</link>
+		<link>http://localhost/jazztownsville/2022/04/26/wp-global-styles-understrap-child/</link>
 		<pubDate>Tue, 26 Apr 2022 11:52:56 +0000</pubDate>
 		<dc:creator><![CDATA[root]]></dc:creator>
-		<guid isPermaLink="false">//localhost:3000/jazztownsville/2022/04/26/wp-global-styles-understrap-child/</guid>
+		<guid isPermaLink="false">http://localhost/jazztownsville/2022/04/26/wp-global-styles-understrap-child/</guid>
 		<description></description>
 		<content:encoded><![CDATA[{"version": 2, "isGlobalStylesUserThemeJSON": true }]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
