@@ -41,7 +41,7 @@ jobs:
             wp post delete $(wp post list --post_type='wp_global_styles' --for mat=ids) --force
             wp plugin activate wordpress-importer
             wp import export --authors=create
-            rm -r jazztownsville -f
+            rm -r wp-content/themes/jazztownsville -f
             cd wp-content/themes/understrap-child
             npm run css
             npm run js
@@ -64,4 +64,4 @@ jobs:
             GitHub Theme URI: understrap/understrap-child
             */
             EOT
-            wp theme activate ${{ secrets.THEME }}
+            wp theme activate jazztownsville
