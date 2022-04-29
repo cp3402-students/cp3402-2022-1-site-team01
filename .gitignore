@@ -4,52 +4,53 @@
 # ------------------------------------------------------------------------
 
 # Numerous always-ignore extensions
-wp-content/themes/understrap*/*.bak
-wp-content/themes/understrap*/*.cvs
-wp-content/themes/understrap*/*.db
-wp-content/themes/understrap*/*.diff
-wp-content/themes/understrap*/*.err
-wp-content/themes/understrap*/*.log
-wp-content/themes/understrap*/*.orig
-wp-content/themes/understrap*/*.rej
-wp-content/themes/understrap*/*.zip
+wp-content/themes/understrap-child/*.bak
+wp-content/themes/understrap-child/*.cvs
+wp-content/themes/understrap-child/*.db
+wp-content/themes/understrap-child/*.diff
+wp-content/themes/understrap-child/*.err
+wp-content/themes/understrap-child/*.log
+wp-content/themes/understrap-child/*.orig
+wp-content/themes/understrap-child/*.rej
+wp-content/themes/understrap-child/*.zip
 # Ignore all files and directories starting with . or ~ or ._ or ending with ~
-wp-content/themes/understrap*/.*
-wp-content/themes/understrap*/~*
-wp-content/themes/understrap*/*~
-wp-content/themes/understrap*/._*
+wp-content/themes/understrap-child/.*
+wp-content/themes/understrap-child/~*
+wp-content/themes/understrap-child/*~
+wp-content/themes/understrap-child/._*
 # but track
-wp-content/themes/understrap*/!.browserslist
-wp-content/themes/understrap*/!.editorconfig
-wp-content/themes/understrap*/!.gitattributes
-wp-content/themes/understrap*/!.github
-wp-content/themes/understrap*/!.gitignore
-wp-content/themes/understrap*/!.jscsrc
-wp-content/themes/understrap*/!.jshintignore
-wp-content/themes/understrap*/!.travis.yml
+wp-content/themes/understrap-child/!.browserslist
+wp-content/themes/understrap-child/!.editorconfig
+wp-content/themes/understrap-child/!.gitattributes
+wp-content/themes/understrap-child/!.github
+wp-content/themes/understrap-child/!.gitignore
+wp-content/themes/understrap-child/!.jscsrc
+wp-content/themes/understrap-child/!.jshintignore
+wp-content/themes/understrap-child/!.travis.yml
 # Ignore all files with .lock extentions
-wp-content/themes/understrap*/*.lock
+wp-content/themes/understrap-child/*.lock
 # but track
-wp-content/themes/understrap*/!composer.lock
+wp-content/themes/understrap-child/!composer.lock
 # OS or Editor files and folders
-wp-content/themes/understrap*/*.code-workspace
-wp-content/themes/understrap*/*.elc
-wp-content/themes/understrap*/*.esproj
-wp-content/themes/understrap*/*.komodoproject
-wp-content/themes/understrap*/*.sublime*
-wp-content/themes/understrap*/*.tmproj*
+wp-content/themes/understrap-child/*.code-workspace
+wp-content/themes/understrap-child/*.elc
+wp-content/themes/understrap-child/*.esproj
+wp-content/themes/understrap-child/*.komodoproject
+wp-content/themes/understrap-child/*.sublime*
+wp-content/themes/understrap-child/*.tmproj*
 # Dependencies
-wp-content/themes/understrap*/bower_components
-wp-content/themes/understrap*/node_modules
-wp-content/themes/understrap*/vendor/
+wp-content/themes/understrap-child/bower_components
+wp-content/themes/understrap-child/node_modules
+wp-content/themes/understrap-child/vendor/
 # Other understrap specific files and directories
-wp-content/themes/understrap*/phpcs.xml
-wp-content/themes/understrap*/dist/
-wp-content/themes/understrap*/dist-product/
-wp-content/themes/understrap*/**/img
+wp-content/themes/understrap-child/phpcs.xml
+wp-content/themes/understrap-child/dist/
+wp-content/themes/understrap-child/dist-product/
+wp-content/themes/understrap-child/**/img
 # Ignore JetBrains .idea folder
 .idea/
 # Ignore troublesome files.
-wp-content/themes/understrap*/css/
-wp-content/themes/understrap*/js/
-wp-content/themes/understrap*/package-lock.json
+wp-content/themes/understrap-child/css/
+wp-content/themes/understrap-child/js/
+wp-content/themes/understrap/package-lock.json
+wp-content/themes/understrap-child/package-lock.json
