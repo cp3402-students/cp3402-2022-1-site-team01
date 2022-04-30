@@ -1,15 +1,11 @@
 #!/usr/bin/bash
 
-../../php/php.exe wp-cli.phar post delete $(../../php/php.exe wp-cli.phar post list --post_type='post' --format=ids) --force
+../../mysql/bin/mysql.exe jazztownsville < ../../htdocs/jazztownsville/export/jazztownsville.sql -u root
 
 if [ $? != 0 ]; then
-  echo "Xampp is not running! import will have to be done manually."
+  echo "Could not pull, Xampp is not running!"
+  git reset -q --hard HEAD^
   exit 1
 fi
-
-../../php/php.exe wp-cli.phar post delete $(../../php/php.exe wp-cli.phar post list --post_type='page' --format=ids) --force
-../../php/php.exe wp-cli.phar post delete $(../../php/php.exe wp-cli.phar post list --post_type='wp_global_styles' --format=ids) --force
-../../php/php.exe wp-cli.phar plugin activate wordpress-importer
-../../php/php.exe wp-cli.phar import export --authors=create
 
 exit 0
