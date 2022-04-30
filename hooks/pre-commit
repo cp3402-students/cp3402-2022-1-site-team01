@@ -4,4 +4,11 @@ rm export/* -f
 
 ../../php/php.exe wp-cli.phar export --dir=export
 
+if [ $? != 0 ]; then
+  echo "Could not commit, Xampp is not running!"
+  exit 1
+fi
+
 git add export
+
+exit 0

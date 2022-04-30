@@ -1,7 +1,15 @@
 #!/usr/bin/bash
 
 ../../php/php.exe wp-cli.phar post delete $(wp post list --post_type='post' --format=ids) --force
+
+if [ $? != 0 ]; then
+  echo "Could not commit, Xampp is not running!"
+  exit 1
+fi
+
 ../../php/php.exe wp-cli.phar post delete $(wp post list --post_type='page' --format=ids) --force
 ../../php/php.exe wp-cli.phar post delete $(wp post list --post_type='wp_global_styles' --for mat=ids) --force
 ../../php/php.exe wp-cli.phar plugin activate wordpress-importer
 ../../php/php.exe wp-cli.phar import export --authors=create
+
+exit 0
