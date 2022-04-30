@@ -1,8 +1,11 @@
 #!/usr/bin/bash
 
-rm export/* -f
+cd export
 
-../../php/php.exe wp-cli.phar export --dir=export
+rm ./* -f
+
+../../php/php.exe wp-cli.phar export
+../../php/php.exe wp-cli.phar db export jazztownsville.sql
 
 if [ $? != 0 ]; then
   echo "Could not commit, Xampp is not running!"
