@@ -8,7 +8,7 @@ if [ $? != 0 ]; then
 fi
 
 ../../php/php.exe wp-cli.phar post delete $(../../php/php.exe wp-cli.phar post list --post_type='page' --format=ids) --force
-../../php/php.exe wp-cli.phar post delete $(../../php/php.exe wp-cli.phar post list --post_type='wp_global_styles' --for mat=ids) --force
+../../php/php.exe wp-cli.phar post delete $(../../php/php.exe wp-cli.phar post list --post_type='wp_global_styles' --format=ids) --force
 ../../php/php.exe wp-cli.phar plugin activate wordpress-importer
 ../../php/php.exe wp-cli.phar import export --authors=create
 
