@@ -3,7 +3,7 @@
 ../../php/php.exe wp-cli.phar post delete $(../../php/php.exe wp-cli.phar post list --post_type='post' --format=ids) --force
 
 if [ $? != 0 ]; then
-  echo "Could not pull, Xampp is not running!"
+  echo "Xampp is not running! import will have to be done manually."
   exit 1
 fi
 
