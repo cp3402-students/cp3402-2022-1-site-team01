@@ -36,6 +36,7 @@ jobs:
             ls -lah
             git checkout main
             git pull
+            wp post-type list
             wp post delete $(wp post list --post_type='post' --format=ids) --force
             wp post delete $(wp post list --post_type='page' --format=ids) --force
             wp post delete $(wp post list --post_type='wp_global_styles' --format=ids) --force
