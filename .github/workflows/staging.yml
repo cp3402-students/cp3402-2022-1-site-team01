@@ -36,7 +36,7 @@ jobs:
             ls -lah
             git checkout main
             git pull
-            cp export/jazztownsville.sql jazztownsville_staging.sql
+            cp export/jazztownsville.sql export/jazztownsville_staging.sql
             sed -i "s/localhost/${{ secrets.STAGING }}/g" export/jazztownsville_staging.sql
             mysql jazztownsville < export/jazztownsville_staging.sql -u root
             rm -r wp-content/themes/jazztownsville -f
