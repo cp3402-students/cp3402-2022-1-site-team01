@@ -1,8 +1,8 @@
 #!/usr/bin/sh
 
-rm export/* -f
+rm export/jazztownsville.sql -f
 
-../../php/php.exe wp-cli.phar export --dir=export
+../../mysql/bin/mysqldump.exe jazztownsville > export/jazztownsville.sql -u root
 
 if [ $? != 0 ]; then
   echo "Could not export, Xampp is not running!"
