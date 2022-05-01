@@ -1,15 +1,23 @@
-#!/usr/bin/bash
+#!/usr/bin/sh
 
-post_types=("post" "page" "attachment" "revision" "nav_menu_item" "custom_css" "customize_changeset" "oembed_cache" "user_request" "wp_block" "wp_template" "wp_template_part" "wp_global_styles" "wp_navigation")
-wp post-type list > /dev/null
+types_string=$(../../php/php.exe wp-cli.phar post-type list --field=name)
+
 if [ $? != 0 ]; then
   echo "Could not import, Xampp is not running!"
   exit 1
 fi
-for post_type in ${post_types[@]}; do
-  ids=$(wp post list --post_type=$post_type --format=ids)
-  if [ -n $ids ]; then
-    wp post delete ids --force
+# Convert to array
+types=($types_string)
+
+for post_type in "${types[@]}"; do
+  ids=$(../../php/php.exe wp-cli.phar post list --post_type=$post_type --format=ids)
+  if [ -n "$ids" ]; then
+    ../../php/php.exe wp-cli.phar post delete $ids --force
   fi
+done
+
+../../php/php.exe wp-cli.phar plugin activate wordpress-importer
+../../php/php.exe wp-cli.phar import export --authors=create
+../../php/php.exe wp-cli.phar theme activate understrap-child
 
 echo "Successfully imported WordPress site."

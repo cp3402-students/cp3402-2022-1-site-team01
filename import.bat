@@ -1,1 +1,1 @@
-bash hooks\import.sh
+sh hooks/import.sh
