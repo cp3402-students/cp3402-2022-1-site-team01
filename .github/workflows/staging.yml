@@ -36,10 +36,21 @@ jobs:
             ls -lah
             git checkout main
             git pull
-            wp post-type list
+            wp post-type list --field=name 
             wp post delete $(wp post list --post_type='post' --format=ids) --force
             wp post delete $(wp post list --post_type='page' --format=ids) --force
+            wp post delete $(wp post list --post_type='attachment' --format=ids) --force
+            wp post delete $(wp post list --post_type='revision' --format=ids) --force
+            wp post delete $(wp post list --post_type='nav_menu_item' --format=ids) --force
+            wp post delete $(wp post list --post_type='custom_css' --format=ids) --force
+            wp post delete $(wp post list --post_type='customize_changeset' --format=ids) --force
+            wp post delete $(wp post list --post_type='oembed_cache' --format=ids) --force
+            wp post delete $(wp post list --post_type='user_request' --format=ids) --force
+            wp post delete $(wp post list --post_type='wp_block' --format=ids) --force
+            wp post delete $(wp post list --post_type='wp_template' --format=ids) --force
+            wp post delete $(wp post list --post_type='wp_template_part' --format=ids) --force
             wp post delete $(wp post list --post_type='wp_global_styles' --format=ids) --force
+            wp post delete $(wp post list --post_type='wp_navigation' --format=ids) --force
             wp plugin activate wordpress-importer
             wp import export --authors=create
             rm -r wp-content/themes/jazztownsville -f
