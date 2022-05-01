@@ -32,7 +32,7 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             whoami
-            cd htdocs
+            cd htdocs/jazztownsville
             ls -lah
             git checkout main
             git pull
