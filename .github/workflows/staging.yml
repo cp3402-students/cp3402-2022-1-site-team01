@@ -38,7 +38,7 @@ jobs:
             git pull
             wp post delete $(wp post list --post_type='post' --format=ids) --force
             wp post delete $(wp post list --post_type='page' --format=ids) --force
-            wp post delete $(wp post list --post_type='wp_global_styles' --for mat=ids) --force
+            wp post delete $(wp post list --post_type='wp_global_styles' --format=ids) --force
             wp plugin activate wordpress-importer
             wp import export --authors=create
             rm -r wp-content/themes/jazztownsville -f
