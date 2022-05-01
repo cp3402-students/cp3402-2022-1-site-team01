@@ -36,7 +36,9 @@ jobs:
             ls -lah
             git checkout main
             git pull
-            wp db import export/jazztownsville_staging.sql
+            cp export/jazztownsville.sql jazztownsville_staging.sql
+            sed -i "s/localhost/54.79.204.77/g" export/jazztownsville_staging.sql
+            mysql jazztownsville < export/jazztownsville_staging.sql -u root
             rm -r wp-content/themes/jazztownsville -f
             cd wp-content/themes/understrap-child
             npm run css
