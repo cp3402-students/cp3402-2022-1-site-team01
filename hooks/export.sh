@@ -6,7 +6,7 @@ rm export/jazztownsville.sql -f
 
 if [ $? != 0 ]; then
   echo "Could not export, Xampp is not running!"
-  git restore export
+  git restore export/jazztownsville.sql
   exit 1
 fi
 
