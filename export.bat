@@ -1,1 +1,1 @@
-bash hooks\export.sh
+sh hooks/export.sh
