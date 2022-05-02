@@ -50,6 +50,7 @@ wp-content/themes/understrap-child/**/img
 # Ignore JetBrains .idea folder
 .idea/
 # Ignore troublesome files.
+wp-content/themes/jazztownsville/
 wp-content/themes/understrap-child/css/
 wp-content/themes/understrap-child/js/
 wp-content/themes/understrap/package-lock.json
