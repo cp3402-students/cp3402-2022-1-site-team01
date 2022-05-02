@@ -5,8 +5,8 @@ npm run js
 npm run dist-build
 mv dist ../jazztownsville
 cd ../../../  # jazztownsville (wp root)
-cat <<EOT > wp-content/themes/jazztownsville/style.css
 cp screenshot.png wp-content/themes/jazztownsville/screenshot.png
+cat <<EOT > wp-content/themes/jazztownsville/style.css
 /*
 Theme Name:   Jazz Townsville
 Theme URI:    https://understrap.com
