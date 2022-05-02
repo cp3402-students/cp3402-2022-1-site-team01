@@ -1,6 +1,6 @@
 ../../mysql/bin/mysql.exe jazztownsville < export/jazztownsville.sql -u root
 
-cd wp-content\themes\understrap-child
+cd wp-content/themes/understrap-child
 
 npm run css
 npm run js
