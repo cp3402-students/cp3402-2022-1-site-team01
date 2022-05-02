@@ -1,5 +1,3 @@
-#!/usr/bin/sh
-
 rm export/jazztownsville.sql -f
 
 ../../mysql/bin/mysqldump.exe jazztownsville > export/jazztownsville.sql -u root
