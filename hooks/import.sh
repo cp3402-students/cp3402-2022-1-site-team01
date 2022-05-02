@@ -1,5 +1,3 @@
-#!/usr/bin/sh
-
 ../../mysql/bin/mysql.exe jazztownsville < export/jazztownsville.sql -u root
 
 if [ $? != 0 ]; then
