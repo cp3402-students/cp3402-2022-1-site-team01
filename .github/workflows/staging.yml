@@ -39,4 +39,4 @@ jobs:
             wp db clean --yes
             wp db import export/jazztownsville.sql
             wp search-replace "localhost" "${{ secrets.STAGING }}"
-            sh compile-theme.sh
+            sh hooks/compile-theme.sh
