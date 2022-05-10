@@ -29,7 +29,8 @@ jobs:
           pwd
           ls
           node -v
-          npx sql-formatter export/jazztownsville.sql -o export/jazztownsville.sql -l mariadb -c sql-formatter-config.json
-          git add export/jazztownsville.sql
-          git commit -m "Format database dump"
-          git push
+          ls -lah node_modules/.bin
+#          npx sql-formatter export/jazztownsville.sql -o export/jazztownsville.sql -l mariadb -c sql-formatter-config.json
+#          git add export/jazztownsville.sql
+#          git commit -m "Format database dump"
+#          git push
