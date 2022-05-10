@@ -33,6 +33,8 @@ jobs:
           ls -lah node_modules/.bin
           npx sql-formatter -h
           npx sql-formatter export/jazztownsville.sql -o export/jazztownsville.sql -l mariadb -c sql-formatter-config.json
+          git config user.email "caleb.webster@my.jcu.edu.au"
+          git config --global user.name "CalebWebsterJCU"
           git add export/jazztownsville.sql
           git commit -m "Format database dump"
           git push
