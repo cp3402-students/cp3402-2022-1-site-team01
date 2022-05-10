@@ -35,6 +35,7 @@ jobs:
           npx sql-formatter export/jazztownsville.sql -o export/jazztownsville.sql -l mariadb -c sql-formatter-config.json
           git config user.email "action@github.com"
           git config --global user.name "GitHub Action"
+          echo "Committing..."
           git diff --quiet && git diff --staged --quiet || git commit -am 'Added license headers'
 #          git add export/jazztownsville.sql
 #          git commit -m "Format database dump"
