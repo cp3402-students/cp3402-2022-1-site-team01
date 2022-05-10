@@ -27,15 +27,11 @@ jobs:
         run: |
           whoami
           pwd
-          ls
           node -v
           chmod +x node_modules/.bin/sql-formatter
-          ls -lah node_modules/.bin
-          npx sql-formatter -h
           npx sql-formatter export/jazztownsville.sql -o export/jazztownsville.sql -l mariadb -c sql-formatter-config.json
           git config user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          echo "Committing..."
           git add export/jazztownsville.sql
           git diff --quiet && git diff --staged --quiet || git commit -am 'Format database dump'
           git push
