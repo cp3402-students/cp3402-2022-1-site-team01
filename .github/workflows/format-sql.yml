@@ -26,4 +26,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           whoami
+          pwd
+          ls
           node -v
