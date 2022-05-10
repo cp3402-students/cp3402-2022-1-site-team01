@@ -1,0 +1,6 @@
+{
+  "language": "spark",
+  "indent": "  ",
+  "keywordCase": "upper",
+  "linesBetweenQueries": 0
+}
