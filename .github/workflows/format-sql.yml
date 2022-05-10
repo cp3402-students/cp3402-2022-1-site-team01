@@ -31,6 +31,7 @@ jobs:
           node -v
           chmod +x node_modules/.bin/sql-formatter
           ls -lah node_modules/.bin
+          npx sql-formatter -h
 #          npx sql-formatter export/jazztownsville.sql -o export/jazztownsville.sql -l mariadb -c sql-formatter-config.json
 #          git add export/jazztownsville.sql
 #          git commit -m "Format database dump"
