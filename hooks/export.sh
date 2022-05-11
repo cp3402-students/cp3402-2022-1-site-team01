@@ -5,8 +5,7 @@ case "$1" in
 
 "content") filename="jazztownsville.sql"
 ;;
-"testdata") echo "Do not export the test data."
-exit 1;
+"testdata") filename="themetestdata.sql"
 ;;
 *) echo "Invalid argument. Please enter \"content\" or \"testdata\"."
   exit 1
