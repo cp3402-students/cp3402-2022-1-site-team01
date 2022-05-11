@@ -5,33 +5,46 @@
 -- Server version	10.4.22-MariaDB
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */
 ;
+
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */
 ;
+
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */
 ;
+
 /*!40101 SET NAMES utf8mb4 */
 ;
+
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */
 ;
+
 /*!40103 SET TIME_ZONE='+00:00' */
 ;
+
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */
 ;
+
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */
 ;
+
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */
 ;
+
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */
 ;
+
 --
 -- Table structure for table `wp_commentmeta`
 --
 DROP TABLE
   IF EXISTS `wp_commentmeta`;
+
 /*!40101 SET @saved_cs_client     = @@character_set_client */
 ;
+
 /*!40101 SET character_set_client = utf8 */
 ;
+
 CREATE TABLE
   `wp_commentmeta` (
     `meta_id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -42,26 +55,35 @@ CREATE TABLE
     KEY `comment_id` (`comment_id`),
     KEY `meta_key` (`meta_key`(191))
   ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci;
+
 /*!40101 SET character_set_client = @saved_cs_client */
 ;
+
 --
 -- Dumping data for table `wp_commentmeta`
 --
 LOCK TABLES `wp_commentmeta` WRITE;
+
 /*!40000 ALTER TABLE `wp_commentmeta` DISABLE KEYS */
 ;
+
 /*!40000 ALTER TABLE `wp_commentmeta` ENABLE KEYS */
 ;
+
 UNLOCK TABLES;
+
 --
 -- Table structure for table `wp_comments`
 --
 DROP TABLE
   IF EXISTS `wp_comments`;
+
 /*!40101 SET @saved_cs_client     = @@character_set_client */
 ;
+
 /*!40101 SET character_set_client = utf8 */
 ;
+
 CREATE TABLE
   `wp_comments` (
     `comment_ID` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -86,14 +108,18 @@ CREATE TABLE
     KEY `comment_parent` (`comment_parent`),
     KEY `comment_author_email` (`comment_author_email`(10))
   ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci;
+
 /*!40101 SET character_set_client = @saved_cs_client */
 ;
+
 --
 -- Dumping data for table `wp_comments`
 --
 LOCK TABLES `wp_comments` WRITE;
+
 /*!40000 ALTER TABLE `wp_comments` DISABLE KEYS */
 ;
+
 INSERT INTO
   `wp_comments`
 VALUES
@@ -114,18 +140,24 @@ VALUES
     0,
     0
   );
+
 /*!40000 ALTER TABLE `wp_comments` ENABLE KEYS */
 ;
+
 UNLOCK TABLES;
+
 --
 -- Table structure for table `wp_links`
 --
 DROP TABLE
   IF EXISTS `wp_links`;
+
 /*!40101 SET @saved_cs_client     = @@character_set_client */
 ;
+
 /*!40101 SET character_set_client = utf8 */
 ;
+
 CREATE TABLE
   `wp_links` (
     `link_id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -144,26 +176,35 @@ CREATE TABLE
     PRIMARY KEY (`link_id`),
     KEY `link_visible` (`link_visible`)
   ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci;
+
 /*!40101 SET character_set_client = @saved_cs_client */
 ;
+
 --
 -- Dumping data for table `wp_links`
 --
 LOCK TABLES `wp_links` WRITE;
+
 /*!40000 ALTER TABLE `wp_links` DISABLE KEYS */
 ;
+
 /*!40000 ALTER TABLE `wp_links` ENABLE KEYS */
 ;
+
 UNLOCK TABLES;
+
 --
 -- Table structure for table `wp_options`
 --
 DROP TABLE
   IF EXISTS `wp_options`;
+
 /*!40101 SET @saved_cs_client     = @@character_set_client */
 ;
+
 /*!40101 SET character_set_client = utf8 */
 ;
+
 CREATE TABLE
   `wp_options` (
     `option_id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -174,14 +215,18 @@ CREATE TABLE
     UNIQUE KEY `option_name` (`option_name`),
     KEY `autoload` (`autoload`)
   ) ENGINE = InnoDB AUTO_INCREMENT = 1072 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci;
+
 /*!40101 SET character_set_client = @saved_cs_client */
 ;
+
 --
 -- Dumping data for table `wp_options`
 --
 LOCK TABLES `wp_options` WRITE;
+
 /*!40000 ALTER TABLE `wp_options` DISABLE KEYS */
 ;
+
 INSERT INTO
   `wp_options`
 VALUES
@@ -757,6 +802,7 @@ VALUES
     '1652191420',
     'no'
   );
+
 INSERT INTO
   `wp_options`
 VALUES
@@ -827,18 +873,24 @@ VALUES
     '<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\" ><defs><filter id=\"wp-duotone-dark-grayscale\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \" /><feComponentTransfer color-interpolation-filters=\"sRGB\" ><feFuncR type=\"table\" tableValues=\"0 0.49803921568627\" /><feFuncG type=\"table\" tableValues=\"0 0.49803921568627\" /><feFuncB type=\"table\" tableValues=\"0 0.49803921568627\" /><feFuncA type=\"table\" tableValues=\"1 1\" /></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\" /></filter></defs></svg><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\" ><defs><filter id=\"wp-duotone-grayscale\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \" /><feComponentTransfer color-interpolation-filters=\"sRGB\" ><feFuncR type=\"table\" tableValues=\"0 1\" /><feFuncG type=\"table\" tableValues=\"0 1\" /><feFuncB type=\"table\" tableValues=\"0 1\" /><feFuncA type=\"table\" tableValues=\"1 1\" /></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\" /></filter></defs></svg><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\" ><defs><filter id=\"wp-duotone-purple-yellow\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \" /><feComponentTransfer color-interpolation-filters=\"sRGB\" ><feFuncR type=\"table\" tableValues=\"0.54901960784314 0.98823529411765\" /><feFuncG type=\"table\" tableValues=\"0 1\" /><feFuncB type=\"table\" tableValues=\"0.71764705882353 0.25490196078431\" /><feFuncA type=\"table\" tableValues=\"1 1\" /></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\" /></filter></defs></svg><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\" ><defs><filter id=\"wp-duotone-blue-red\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \" /><feComponentTransfer color-interpolation-filters=\"sRGB\" ><feFuncR type=\"table\" tableValues=\"0 1\" /><feFuncG type=\"table\" tableValues=\"0 0.27843137254902\" /><feFuncB type=\"table\" tableValues=\"0.5921568627451 0.27843137254902\" /><feFuncA type=\"table\" tableValues=\"1 1\" /></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\" /></filter></defs></svg><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\" ><defs><filter id=\"wp-duotone-midnight\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \" /><feComponentTransfer color-interpolation-filters=\"sRGB\" ><feFuncR type=\"table\" tableValues=\"0 0\" /><feFuncG type=\"table\" tableValues=\"0 0.64705882352941\" /><feFuncB type=\"table\" tableValues=\"0 1\" /><feFuncA type=\"table\" tableValues=\"1 1\" /></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\" /></filter></defs></svg><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\" ><defs><filter id=\"wp-duotone-magenta-yellow\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \" /><feComponentTransfer color-interpolation-filters=\"sRGB\" ><feFuncR type=\"table\" tableValues=\"0.78039215686275 1\" /><feFuncG type=\"table\" tableValues=\"0 0.94901960784314\" /><feFuncB type=\"table\" tableValues=\"0.35294117647059 0.47058823529412\" /><feFuncA type=\"table\" tableValues=\"1 1\" /></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\" /></filter></defs></svg><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\" ><defs><filter id=\"wp-duotone-purple-green\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \" /><feComponentTransfer color-interpolation-filters=\"sRGB\" ><feFuncR type=\"table\" tableValues=\"0.65098039215686 0.40392156862745\" /><feFuncG type=\"table\" tableValues=\"0 1\" /><feFuncB type=\"table\" tableValues=\"0.44705882352941 0.4\" /><feFuncA type=\"table\" tableValues=\"1 1\" /></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\" /></filter></defs></svg><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 0 0\" width=\"0\" height=\"0\" focusable=\"false\" role=\"none\" style=\"visibility: hidden; position: absolute; left: -9999px; overflow: hidden;\" ><defs><filter id=\"wp-duotone-blue-orange\"><feColorMatrix color-interpolation-filters=\"sRGB\" type=\"matrix\" values=\" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 \" /><feComponentTransfer color-interpolation-filters=\"sRGB\" ><feFuncR type=\"table\" tableValues=\"0.098039215686275 1\" /><feFuncG type=\"table\" tableValues=\"0 0.66274509803922\" /><feFuncB type=\"table\" tableValues=\"0.84705882352941 0.41960784313725\" /><feFuncA type=\"table\" tableValues=\"1 1\" /></feComponentTransfer><feComposite in2=\"SourceGraphic\" operator=\"in\" /></filter></defs></svg>',
     'no'
   );
+
 /*!40000 ALTER TABLE `wp_options` ENABLE KEYS */
 ;
+
 UNLOCK TABLES;
+
 --
 -- Table structure for table `wp_postmeta`
 --
 DROP TABLE
   IF EXISTS `wp_postmeta`;
+
 /*!40101 SET @saved_cs_client     = @@character_set_client */
 ;
+
 /*!40101 SET character_set_client = utf8 */
 ;
+
 CREATE TABLE
   `wp_postmeta` (
     `meta_id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -849,14 +901,18 @@ CREATE TABLE
     KEY `post_id` (`post_id`),
     KEY `meta_key` (`meta_key`(191))
   ) ENGINE = InnoDB AUTO_INCREMENT = 921 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci;
+
 /*!40101 SET character_set_client = @saved_cs_client */
 ;
+
 --
 -- Dumping data for table `wp_postmeta`
 --
 LOCK TABLES `wp_postmeta` WRITE;
+
 /*!40000 ALTER TABLE `wp_postmeta` DISABLE KEYS */
 ;
+
 INSERT INTO
   `wp_postmeta`
 VALUES
@@ -3432,18 +3488,24 @@ VALUES
     '_wp_attachment_metadata',
     'a:5:{s:5:\"width\";i:299;s:6:\"height\";i:428;s:4:\"file\";s:28:\"2022/05/wpcaa8c393_05_06.jpg\";s:5:\"sizes\";a:0:{}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'
   );
+
 /*!40000 ALTER TABLE `wp_postmeta` ENABLE KEYS */
 ;
+
 UNLOCK TABLES;
+
 --
 -- Table structure for table `wp_posts`
 --
 DROP TABLE
   IF EXISTS `wp_posts`;
+
 /*!40101 SET @saved_cs_client     = @@character_set_client */
 ;
+
 /*!40101 SET character_set_client = utf8 */
 ;
+
 CREATE TABLE
   `wp_posts` (
     `ID` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -3475,14 +3537,18 @@ CREATE TABLE
     KEY `post_parent` (`post_parent`),
     KEY `post_author` (`post_author`)
   ) ENGINE = InnoDB AUTO_INCREMENT = 459 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci;
+
 /*!40101 SET character_set_client = @saved_cs_client */
 ;
+
 --
 -- Dumping data for table `wp_posts`
 --
 LOCK TABLES `wp_posts` WRITE;
+
 /*!40000 ALTER TABLE `wp_posts` DISABLE KEYS */
 ;
+
 INSERT INTO
   `wp_posts`
 VALUES
@@ -12886,18 +12952,24 @@ VALUES
     '',
     0
   );
+
 /*!40000 ALTER TABLE `wp_posts` ENABLE KEYS */
 ;
+
 UNLOCK TABLES;
+
 --
 -- Table structure for table `wp_term_relationships`
 --
 DROP TABLE
   IF EXISTS `wp_term_relationships`;
+
 /*!40101 SET @saved_cs_client     = @@character_set_client */
 ;
+
 /*!40101 SET character_set_client = utf8 */
 ;
+
 CREATE TABLE
   `wp_term_relationships` (
     `object_id` BIGINT(20) UNSIGNED NOT NULL DEFAULT 0,
@@ -12906,14 +12978,18 @@ CREATE TABLE
     PRIMARY KEY (`object_id`, `term_taxonomy_id`),
     KEY `term_taxonomy_id` (`term_taxonomy_id`)
   ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci;
+
 /*!40101 SET character_set_client = @saved_cs_client */
 ;
+
 --
 -- Dumping data for table `wp_term_relationships`
 --
 LOCK TABLES `wp_term_relationships` WRITE;
+
 /*!40000 ALTER TABLE `wp_term_relationships` DISABLE KEYS */
 ;
+
 INSERT INTO
   `wp_term_relationships`
 VALUES
@@ -12933,18 +13009,24 @@ VALUES
   (84, 6, 0),
   (96, 6, 0),
   (404, 6, 0);
+
 /*!40000 ALTER TABLE `wp_term_relationships` ENABLE KEYS */
 ;
+
 UNLOCK TABLES;
+
 --
 -- Table structure for table `wp_term_taxonomy`
 --
 DROP TABLE
   IF EXISTS `wp_term_taxonomy`;
+
 /*!40101 SET @saved_cs_client     = @@character_set_client */
 ;
+
 /*!40101 SET character_set_client = utf8 */
 ;
+
 CREATE TABLE
   `wp_term_taxonomy` (
     `term_taxonomy_id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -12957,14 +13039,18 @@ CREATE TABLE
     UNIQUE KEY `term_id_taxonomy` (`term_id`, `taxonomy`),
     KEY `taxonomy` (`taxonomy`)
   ) ENGINE = InnoDB AUTO_INCREMENT = 7 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci;
+
 /*!40101 SET character_set_client = @saved_cs_client */
 ;
+
 --
 -- Dumping data for table `wp_term_taxonomy`
 --
 LOCK TABLES `wp_term_taxonomy` WRITE;
+
 /*!40000 ALTER TABLE `wp_term_taxonomy` DISABLE KEYS */
 ;
+
 INSERT INTO
   `wp_term_taxonomy`
 VALUES
@@ -12973,18 +13059,24 @@ VALUES
   (4, 4, 'wp_theme', '', 0, 1),
   (5, 5, 'nav_menu', '', 0, 4),
   (6, 6, 'nav_menu', '', 0, 9);
+
 /*!40000 ALTER TABLE `wp_term_taxonomy` ENABLE KEYS */
 ;
+
 UNLOCK TABLES;
+
 --
 -- Table structure for table `wp_termmeta`
 --
 DROP TABLE
   IF EXISTS `wp_termmeta`;
+
 /*!40101 SET @saved_cs_client     = @@character_set_client */
 ;
+
 /*!40101 SET character_set_client = utf8 */
 ;
+
 CREATE TABLE
   `wp_termmeta` (
     `meta_id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -12995,26 +13087,35 @@ CREATE TABLE
     KEY `term_id` (`term_id`),
     KEY `meta_key` (`meta_key`(191))
   ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci;
+
 /*!40101 SET character_set_client = @saved_cs_client */
 ;
+
 --
 -- Dumping data for table `wp_termmeta`
 --
 LOCK TABLES `wp_termmeta` WRITE;
+
 /*!40000 ALTER TABLE `wp_termmeta` DISABLE KEYS */
 ;
+
 /*!40000 ALTER TABLE `wp_termmeta` ENABLE KEYS */
 ;
+
 UNLOCK TABLES;
+
 --
 -- Table structure for table `wp_terms`
 --
 DROP TABLE
   IF EXISTS `wp_terms`;
+
 /*!40101 SET @saved_cs_client     = @@character_set_client */
 ;
+
 /*!40101 SET character_set_client = utf8 */
 ;
+
 CREATE TABLE
   `wp_terms` (
     `term_id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -13025,14 +13126,18 @@ CREATE TABLE
     KEY `slug` (`slug`(191)),
     KEY `name` (`name`(191))
   ) ENGINE = InnoDB AUTO_INCREMENT = 7 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci;
+
 /*!40101 SET character_set_client = @saved_cs_client */
 ;
+
 --
 -- Dumping data for table `wp_terms`
 --
 LOCK TABLES `wp_terms` WRITE;
+
 /*!40000 ALTER TABLE `wp_terms` DISABLE KEYS */
 ;
+
 INSERT INTO
   `wp_terms`
 VALUES
@@ -13041,18 +13146,24 @@ VALUES
   (4, 'understrap-child', 'understrap-child', 0),
   (5, 'History Nav', 'history-nav', 0),
   (6, 'Main Menu', 'main-menu', 0);
+
 /*!40000 ALTER TABLE `wp_terms` ENABLE KEYS */
 ;
+
 UNLOCK TABLES;
+
 --
 -- Table structure for table `wp_usermeta`
 --
 DROP TABLE
   IF EXISTS `wp_usermeta`;
+
 /*!40101 SET @saved_cs_client     = @@character_set_client */
 ;
+
 /*!40101 SET character_set_client = utf8 */
 ;
+
 CREATE TABLE
   `wp_usermeta` (
     `umeta_id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -13063,14 +13174,18 @@ CREATE TABLE
     KEY `user_id` (`user_id`),
     KEY `meta_key` (`meta_key`(191))
   ) ENGINE = InnoDB AUTO_INCREMENT = 23 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci;
+
 /*!40101 SET character_set_client = @saved_cs_client */
 ;
+
 --
 -- Dumping data for table `wp_usermeta`
 --
 LOCK TABLES `wp_usermeta` WRITE;
+
 /*!40000 ALTER TABLE `wp_usermeta` DISABLE KEYS */
 ;
+
 INSERT INTO
   `wp_usermeta`
 VALUES
@@ -13121,18 +13236,24 @@ VALUES
     'metaboxhidden_nav-menus',
     'a:2:{i:0;s:12:\"add-post_tag\";i:1;s:15:\"add-post_format\";}'
   );
+
 /*!40000 ALTER TABLE `wp_usermeta` ENABLE KEYS */
 ;
+
 UNLOCK TABLES;
+
 --
 -- Table structure for table `wp_users`
 --
 DROP TABLE
   IF EXISTS `wp_users`;
+
 /*!40101 SET @saved_cs_client     = @@character_set_client */
 ;
+
 /*!40101 SET character_set_client = utf8 */
 ;
+
 CREATE TABLE
   `wp_users` (
     `ID` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -13150,14 +13271,18 @@ CREATE TABLE
     KEY `user_nicename` (`user_nicename`),
     KEY `user_email` (`user_email`)
   ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci;
+
 /*!40101 SET character_set_client = @saved_cs_client */
 ;
+
 --
 -- Dumping data for table `wp_users`
 --
 LOCK TABLES `wp_users` WRITE;
+
 /*!40000 ALTER TABLE `wp_users` DISABLE KEYS */
 ;
+
 INSERT INTO
   `wp_users`
 VALUES
@@ -13173,23 +13298,34 @@ VALUES
     0,
     'root'
   );
+
 /*!40000 ALTER TABLE `wp_users` ENABLE KEYS */
 ;
+
 UNLOCK TABLES;
+
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */
 ;
+
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */
 ;
+
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */
 ;
+
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */
 ;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */
 ;
+
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */
 ;
+
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */
 ;
+
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */
 ;
+
 -- Dump completed on 2022-05-10 23:59:52
