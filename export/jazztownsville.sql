@@ -47,8 +47,8 @@ DROP TABLE
 
 CREATE TABLE
   `wp_commentmeta` (
-    `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-    `comment_id` bigint(20) unsigned NOT NULL DEFAULT 0,
+    `meta_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT,
+    `comment_id` BIGINT(20) unsigned NOT NULL DEFAULT 0,
     `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
     `meta_value` longtext COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
     PRIMARY KEY (`meta_id`),
@@ -86,8 +86,8 @@ DROP TABLE
 
 CREATE TABLE
   `wp_comments` (
-    `comment_ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-    `comment_post_ID` bigint(20) unsigned NOT NULL DEFAULT 0,
+    `comment_ID` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT,
+    `comment_post_ID` BIGINT(20) unsigned NOT NULL DEFAULT 0,
     `comment_author` tinytext COLLATE utf8mb4_unicode_520_ci NOT NULL,
     `comment_author_email` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
     `comment_author_url` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
@@ -99,8 +99,8 @@ CREATE TABLE
     `comment_approved` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '1',
     `comment_agent` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
     `comment_type` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'comment',
-    `comment_parent` bigint(20) unsigned NOT NULL DEFAULT 0,
-    `user_id` bigint(20) unsigned NOT NULL DEFAULT 0,
+    `comment_parent` BIGINT(20) unsigned NOT NULL DEFAULT 0,
+    `user_id` BIGINT(20) unsigned NOT NULL DEFAULT 0,
     PRIMARY KEY (`comment_ID`),
     KEY `comment_post_ID` (`comment_post_ID`),
     KEY `comment_approved_date_gmt` (`comment_approved`, `comment_date_gmt`),
@@ -160,14 +160,14 @@ DROP TABLE
 
 CREATE TABLE
   `wp_links` (
-    `link_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+    `link_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT,
     `link_url` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
     `link_name` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
     `link_image` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
     `link_target` varchar(25) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
     `link_description` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
     `link_visible` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'Y',
-    `link_owner` bigint(20) unsigned NOT NULL DEFAULT 1,
+    `link_owner` BIGINT(20) unsigned NOT NULL DEFAULT 1,
     `link_rating` int(11) NOT NULL DEFAULT 0,
     `link_updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
     `link_rel` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
@@ -207,7 +207,7 @@ DROP TABLE
 
 CREATE TABLE
   `wp_options` (
-    `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+    `option_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT,
     `option_name` varchar(191) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
     `option_value` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
     `autoload` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'yes',
@@ -880,8 +880,8 @@ DROP TABLE
 
 CREATE TABLE
   `wp_postmeta` (
-    `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-    `post_id` bigint(20) unsigned NOT NULL DEFAULT 0,
+    `meta_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT,
+    `post_id` BIGINT(20) unsigned NOT NULL DEFAULT 0,
     `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
     `meta_value` longtext COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
     PRIMARY KEY (`meta_id`),
@@ -3445,8 +3445,8 @@ DROP TABLE
 
 CREATE TABLE
   `wp_posts` (
-    `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-    `post_author` bigint(20) unsigned NOT NULL DEFAULT 0,
+    `ID` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT,
+    `post_author` BIGINT(20) unsigned NOT NULL DEFAULT 0,
     `post_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
     `post_date_gmt` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
     `post_content` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
@@ -3462,12 +3462,12 @@ CREATE TABLE
     `post_modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
     `post_modified_gmt` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
     `post_content_filtered` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
-    `post_parent` bigint(20) unsigned NOT NULL DEFAULT 0,
+    `post_parent` BIGINT(20) unsigned NOT NULL DEFAULT 0,
     `guid` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
     `menu_order` int(11) NOT NULL DEFAULT 0,
     `post_type` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'post',
     `post_mime_type` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-    `comment_count` bigint(20) NOT NULL DEFAULT 0,
+    `comment_count` BIGINT(20) NOT NULL DEFAULT 0,
     PRIMARY KEY (`ID`),
     KEY `post_name` (`post_name`(191)),
     KEY `type_status_date` (`post_type`, `post_status`, `post_date`, `ID`),
@@ -12559,8 +12559,8 @@ DROP TABLE
 
 CREATE TABLE
   `wp_term_relationships` (
-    `object_id` bigint(20) unsigned NOT NULL DEFAULT 0,
-    `term_taxonomy_id` bigint(20) unsigned NOT NULL DEFAULT 0,
+    `object_id` BIGINT(20) unsigned NOT NULL DEFAULT 0,
+    `term_taxonomy_id` BIGINT(20) unsigned NOT NULL DEFAULT 0,
     `term_order` int(11) NOT NULL DEFAULT 0,
     PRIMARY KEY (`object_id`, `term_taxonomy_id`),
     KEY `term_taxonomy_id` (`term_taxonomy_id`)
@@ -12615,12 +12615,12 @@ DROP TABLE
 
 CREATE TABLE
   `wp_term_taxonomy` (
-    `term_taxonomy_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-    `term_id` bigint(20) unsigned NOT NULL DEFAULT 0,
+    `term_taxonomy_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT,
+    `term_id` BIGINT(20) unsigned NOT NULL DEFAULT 0,
     `taxonomy` varchar(32) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
     `description` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
-    `parent` bigint(20) unsigned NOT NULL DEFAULT 0,
-    `count` bigint(20) NOT NULL DEFAULT 0,
+    `parent` BIGINT(20) unsigned NOT NULL DEFAULT 0,
+    `count` BIGINT(20) NOT NULL DEFAULT 0,
     PRIMARY KEY (`term_taxonomy_id`),
     UNIQUE KEY `term_id_taxonomy` (`term_id`, `taxonomy`),
     KEY `taxonomy` (`taxonomy`)
@@ -12665,8 +12665,8 @@ DROP TABLE
 
 CREATE TABLE
   `wp_termmeta` (
-    `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-    `term_id` bigint(20) unsigned NOT NULL DEFAULT 0,
+    `meta_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT,
+    `term_id` BIGINT(20) unsigned NOT NULL DEFAULT 0,
     `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
     `meta_value` longtext COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
     PRIMARY KEY (`meta_id`),
@@ -12704,10 +12704,10 @@ DROP TABLE
 
 CREATE TABLE
   `wp_terms` (
-    `term_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+    `term_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT,
     `name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
     `slug` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
-    `term_group` bigint(10) NOT NULL DEFAULT 0,
+    `term_group` BIGINT(10) NOT NULL DEFAULT 0,
     PRIMARY KEY (`term_id`),
     KEY `slug` (`slug`(191)),
     KEY `name` (`name`(191))
@@ -12752,8 +12752,8 @@ DROP TABLE
 
 CREATE TABLE
   `wp_usermeta` (
-    `umeta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-    `user_id` bigint(20) unsigned NOT NULL DEFAULT 0,
+    `umeta_id` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT,
+    `user_id` BIGINT(20) unsigned NOT NULL DEFAULT 0,
     `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
     `meta_value` longtext COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
     PRIMARY KEY (`umeta_id`),
@@ -12842,7 +12842,7 @@ DROP TABLE
 
 CREATE TABLE
   `wp_users` (
-    `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+    `ID` BIGINT(20) unsigned NOT NULL AUTO_INCREMENT,
     `user_login` varchar(60) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
     `user_pass` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
     `user_nicename` varchar(50) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
