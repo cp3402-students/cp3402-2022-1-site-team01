@@ -29,9 +29,8 @@ jobs:
           pwd
           node -v
           npm install sql-formatter@6.0.0-beta.2
-          ls
           chmod +x node_modules/.bin/sql-formatter
-          npx sql-formatter export/jazztownsville.sql -o export/jazztownsville.sql -l mariadb -c sql-formatter-config.json
+          npx sql-formatter export/jazztownsville.sql -o export/jazztownsville.sql -l mariadb
           git config user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git add export/jazztownsville.sql
