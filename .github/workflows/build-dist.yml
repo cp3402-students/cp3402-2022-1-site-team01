@@ -33,5 +33,5 @@ jobs:
           ls -h dist
           git fetch
           git branch -a
-          git checkout dist
+          git checkout dist --
           ls -h
