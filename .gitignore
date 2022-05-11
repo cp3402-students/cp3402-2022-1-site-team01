@@ -3,6 +3,19 @@
 # - https://git-scm.com/docs/gitignore
 # ------------------------------------------------------------------------
 
+wp-*.php
+xmlrpc.php
+wp-admin/
+wp-includes/
+.htaccess
+readme.html
+index.php
+!wp-content/
+
+package.json
+package-lock.json
+node_modules/
+
 # Numerous always-ignore extensions
 wp-content/themes/understrap-child/*.bak
 wp-content/themes/understrap-child/*.cvs
@@ -56,5 +69,3 @@ wp-content/themes/understrap-child/js/
 wp-content/themes/understrap/package-lock.json
 wp-content/themes/understrap-child/package-lock.json
 wp-content/themes/understrap-child/inc/
-
-package-lock.json
