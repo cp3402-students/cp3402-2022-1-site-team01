@@ -26,13 +26,13 @@ jobs:
       - name: Format jazztownsville.sql
         run: |
           whoami
-          pwd
-          node -v
-          npm install sql-formatter@6.0.0-beta.2
-          chmod +x node_modules/.bin/sql-formatter
-          npx sql-formatter export/jazztownsville.sql -o export/jazztownsville.sql -l mariadb
-          git config user.email "action@github.com"
-          git config --global user.name "GitHub Action"
-          git add export/jazztownsville.sql
-          git diff --quiet && git diff --staged --quiet || git commit -m 'Format database dump'
-          git push
+#          pwd
+#          node -v
+#          npm install sql-formatter@6.0.0-beta.2
+#          chmod +x node_modules/.bin/sql-formatter
+#          npx sql-formatter export/jazztownsville.sql -o export/jazztownsville.sql -l mariadb
+#          git config user.email "action@github.com"
+#          git config --global user.name "GitHub Action"
+#          git add export/jazztownsville.sql
+#          git diff --quiet && git diff --staged --quiet || git commit -m 'Format database dump'
+#          git push
