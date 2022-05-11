@@ -27,11 +27,12 @@ jobs:
       - name: Run a multi-line script
         run: |
           pwd
+          ls -h
           npm install
           npm run dist
           npm run dist-build
           ls -h dist
           git fetch
           git branch -a
-          git checkout dist --
+          git checkout -f dist --
           ls -h
