@@ -1,8 +1,23 @@
-../../mysql/bin/mysqldump.exe jazztownsville > export/jazztownsville.sql -u root
+
+declare filename
+
+case "$1" in
+
+"content") filename="jazztownsville.sql"
+;;
+"testdata") echo "Do not export the test data."
+exit 1;
+;;
+*) echo "Invalid argument. Please enter \"content\" or \"testdata\"."
+  exit 1
+  ;;
+esac
+
+../../mysql/bin/mysqldump.exe jazztownsville > export/$filename -u root
 
 if [ $? != 0 ]; then
   echo "Could not export, Xampp is not running!"
-  git restore export/jazztownsville.sql
+  git restore export/$filename
   exit 1
 fi
 

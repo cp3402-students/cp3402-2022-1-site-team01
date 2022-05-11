@@ -1,1 +1,1 @@
-"C:\Program Files\Git\bin\sh.exe" hooks/import.sh
+"C:\Program Files\Git\bin\sh.exe" hooks/import.sh %*
