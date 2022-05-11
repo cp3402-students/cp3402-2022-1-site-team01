@@ -15,3 +15,7 @@ npm-debug.log
 /vendor/
 
 package-lock.json
+
+css/
+
+js/
