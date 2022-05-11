@@ -29,3 +29,8 @@ jobs:
           pwd
           npm install
           ls
+          git clone -b dist https://github.com/cp3402-students/cp3402-2022-1-site-team01 dist
+          ls -h dist
+          npm run dist
+          npm run dist-build
+          ls -h dist
