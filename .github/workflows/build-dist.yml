@@ -31,5 +31,7 @@ jobs:
           npm run dist
           npm run dist-build
           ls -h dist
+          git fetch
+          git branch -a
           git checkout dist
           ls -h
