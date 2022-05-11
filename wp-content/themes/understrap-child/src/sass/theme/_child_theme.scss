@@ -1,1 +1,18 @@
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.page .entry-title{
+    padding-top: 40px;
+}
+
+#main-nav {
+  position:fixed;
+  padding: 40px 0px 10px 0px;
+  top:0;
+  right:0;
+  left:0;
+  z-index:99;
+}
+
 
