@@ -58,5 +58,7 @@ jobs:
           */
           EOT
           ls -h
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
           git diff --quiet && git diff --staged --quiet || git commit -am 'Create distributable theme'
           git push
