@@ -32,6 +32,7 @@ jobs:
           npm run dist
           npm run dist-build
           mv dist ../dist
+          git fetch
           git checkout dist
           rm -r -f ./*
           mv ../dist/* .
