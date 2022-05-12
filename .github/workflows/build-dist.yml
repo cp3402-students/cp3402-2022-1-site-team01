@@ -42,21 +42,6 @@ jobs:
           rm deployment.md
           rm site.md
           rm theme.md
-          cat <<EOT > style.css
-          /*
-            Theme Name:   Jazz Townsville
-            Theme URI:    https://understrap.com
-            Description:
-            Author:       Gauvan and the Boys
-            Author URI:   https://github.com/cp3402-students/cp3402-2022-1-site-team01/graphs/contributors
-            Version:      1.0.0
-            License: GNU General Public License v2 or later
-            License URI: http://www.gnu.org/licenses/gpl-2.0.html
-            Text Domain:  understrap-child
-            Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
-            GitHub Theme URI: understrap/understrap-child
-          */
-          EOT
           ls -h
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
