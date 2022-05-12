@@ -41,7 +41,6 @@ jobs:
           rm deployment.md
           rm site.md
           rm theme.md
-          rm .gitignore
           cat <<EOT > style.css
           /*
             Theme Name:   Jazz Townsville
