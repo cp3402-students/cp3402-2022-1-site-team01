@@ -32,4 +32,8 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             whoami
+            pwd
+            cd htdocs/jazztownsville/wp-content/themes/understrap-child
+            ls -h
+            git pull
             sh .github/compile-theme.sh

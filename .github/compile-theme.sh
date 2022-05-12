@@ -1,6 +1,3 @@
-cd htdocs/jazztownsville/wp-content/themes/understrap-child
-ls -h
-git pull
 npm run dist
 npm run dist-build
 rm -r -f ../jazztheme
