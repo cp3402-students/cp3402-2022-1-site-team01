@@ -31,8 +31,14 @@ jobs:
           npm install
           npm run dist
           npm run dist-build
+          ls -h dist
           git clone -b dist https://github.com/cp3402-students/cp3402-2022-1-site-team01.git ../dist
           rm -r -f ../dist/*
           mv dist/* ../dist
           cd ../dist
           ls -h
+          rm LICENSE
+          rm README.md
+          rm deployment.md
+          rm site.md
+          rm theme.md
