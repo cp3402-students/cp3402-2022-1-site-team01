@@ -32,4 +32,5 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             whoami
+            pwd
             sh .github/compile-theme.sh
