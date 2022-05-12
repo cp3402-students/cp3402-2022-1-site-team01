@@ -31,11 +31,10 @@ jobs:
           npm install
           npm run dist
           npm run dist-build
-          ls -h dist
-          git clone -b dist https://github.com/cp3402-students/cp3402-2022-1-site-team01.git ../dist
-          rm -r -f ../dist/*
-          mv dist/* ../dist
-          cd ../dist
+          mv dist ../dist
+          git checkout dist
+          rm -r -f ./*
+          mv ../dist/* .
           rm LICENSE
           rm README.md
           rm deployment.md
@@ -58,7 +57,7 @@ jobs:
           */
           EOT
           ls -h
-          git config --global user.name "GitHub Action"
+          git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git diff --quiet && git diff --staged --quiet || git commit -am 'Create distributable theme'
           git push
