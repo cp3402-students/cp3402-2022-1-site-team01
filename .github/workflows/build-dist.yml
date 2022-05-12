@@ -36,9 +36,28 @@ jobs:
           rm -r -f ../dist/*
           mv dist/* ../dist
           cd ../dist
-          ls -h
           rm LICENSE
           rm README.md
           rm deployment.md
           rm site.md
           rm theme.md
+          rm .gitignore
+          cat <<EOT > style.css
+          /*
+            Theme Name:   Jazz Townsville
+            Theme URI:    https://understrap.com
+            Description:
+            Author:       Gauvan and the Boys
+            Author URI:   https://github.com/understrap/understrap-child/graphs/contributors
+            Template:     understrap
+            Version:      1.1.0
+            License: GNU General Public License v2 or later
+            License URI: http://www.gnu.org/licenses/gpl-2.0.html
+            Text Domain:  understrap-child
+            Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
+            GitHub Theme URI: understrap/understrap-child
+          */
+          EOT
+          ls -h
+#          git diff --quiet && git diff --staged --quiet || git commit -am 'Create distributable theme'
+#          git push
