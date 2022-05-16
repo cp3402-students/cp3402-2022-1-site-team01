@@ -1,19 +1,101 @@
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
+// .nav-item.dropdown:hover .dropdown-menu {
+//     display: block;
+// }
+
+// .page .entry-title{
+//     padding-top: 40px;
+// }
+
+// #main-nav {
+//   position:fixed;
+//   padding: 10px 0px 10px 0px;
+//   top:0;
+//   right:0;
+//   left:0;
+//   z-index:99;
+// }
+
+@font-face {
+  font-family: futura-book;
+  src: url(../fonts/futura-book.ttf);
 }
 
-.page .entry-title{
-    padding-top: 40px;
+$primary: black; // Once we've changed the value, we'll also make it the primary brand color.
+$secondary: #C9C9C9;
+$refinement: #BA181B;
+
+body {
+  font-family: 'futura-book', futura-book;
+  font-size: 18px;
+  line-height: 1.25;
 }
 
-#main-nav {
-  position:fixed;
-  padding: 10px 0px 10px 0px;
-  top:0;
-  right:0;
-  left:0;
-  z-index:99;
+.home-banner {
+  height: 1080px;
+  color: grey;
+  background-image: url(../img/home-banner.jpg);
+  background-size: cover;
 }
 
+#wrapper-navbar {
+  .top-header-holder {
+    height: 200px;
+    color: $secondary;
+    // padding-top: 50px;
+    padding-bottom: 50px;
 
+    .header-container {
+      background-color: $primary;
 
+      .logo-holder {
+        .logo {
+          padding: 0.25em;
+        }
+      }
+
+      .booking-btn {
+        font-family: 'Fredericka the Great', cursive;
+        color: $secondary;
+        font-size: 38px;
+        border: 1px dotted $secondary;
+        display: inline-block;
+        padding: 0.25em 0.5em;
+        border-radius: 0.2em;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+          background: $secondary;
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  // margin-bottom: -360px;
+
+  #main-nav {
+    border-top: 1px solid rgba($refinement, 0.5);
+    border-bottom: 1px solid rgba($refinement, 0.5);
+
+    ul {
+      flex: 1;
+      justify-content: space-between;
+
+      li {
+        a {
+          font-weight: 500;
+          font-size: 20px;
+          text-transform: uppercase;
+          padding: .5em 0.5em;
+        }
+
+        &.current_page_item {
+          a {
+            color: $refinement;
+          }
+        }
+      }
+    }
+  }
+}

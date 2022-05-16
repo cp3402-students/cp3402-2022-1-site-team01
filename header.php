@@ -19,6 +19,9 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -29,8 +32,39 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<header id="wrapper-navbar">
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+		<div class="top-header-holder">	
+			<div class="header-container">
+			 	<div class="row">
+					<div class="col-4">
+							<div class="logo-holder">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>./img/jazz-logo.png" 
+								alt="Jazz Townsville Logo" width="250px">
+							</div>
+					</div>
 
+					<div class="col-6">
+						<div class="reservation">
+							<div class="contact-holder">
+								<div class="phone">0431618618</div>
+								<div class="address">Hotel Grand Chancellor first floor Pandora Room. 334 Flinders Street, 
+								Townsville</div>
+							</div>
+							<a href="#" class="booking-btn">Book Now!</a>
+						</div>
+					</div>
+
+					<div class="col-2">
+						<div class="social-meida">
+							<i class="fa fa-facebook-square"></i>
+							<i class="fa fa-envelope-square"></i>				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+		
 		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
 
 	</header><!-- #wrapper-navbar end -->

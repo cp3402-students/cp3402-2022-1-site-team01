@@ -427,7 +427,7 @@ progress {
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
-  --bs-red: black;
+  --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
@@ -446,19 +446,19 @@ progress {
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: black;
-  --bs-secondary: #6c757d;
+  --bs-secondary: #C9C9C9;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
-  --bs-danger: black;
+  --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 0, 0, 0;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-secondary-rgb: 201, 201, 201;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb: 0, 0, 0;
+  --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
@@ -554,15 +554,15 @@ progress {
 }
 
 .table-secondary {
-  --bs-table-bg: #e2e3e5;
-  --bs-table-striped-bg: #d7d8da;
+  --bs-table-bg: #f4f4f4;
+  --bs-table-striped-bg: #e8e8e8;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #cbccce;
+  --bs-table-active-bg: gainsboro;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #d1d2d4;
+  --bs-table-hover-bg: #e2e2e2;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #cbccce;
+  border-color: gainsboro;
 }
 
 .table-success {
@@ -602,15 +602,15 @@ progress {
 }
 
 .table-danger {
-  --bs-table-bg: #cccccc;
-  --bs-table-striped-bg: #c2c2c2;
+  --bs-table-bg: #f8d7da;
+  --bs-table-striped-bg: #eccccf;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #b8b8b8;
+  --bs-table-active-bg: #dfc2c4;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #bdbdbd;
+  --bs-table-hover-bg: #e5c7ca;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #b8b8b8;
+  border-color: #dfc2c4;
 }
 
 .table-light {
@@ -853,12 +853,12 @@ progress {
 
 .has-red-color,
 .has-red-color:visited {
-  color: black;
+  color: #dc3545;
 }
 
 .has-red-background-color {
-  background-color: black;
-  border-color: black;
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 
 .has-orange-color,
@@ -953,12 +953,12 @@ progress {
 
 .has-secondary-color,
 .has-secondary-color:visited {
-  color: #6c757d;
+  color: #C9C9C9;
 }
 
 .has-secondary-background-color {
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #C9C9C9;
+  border-color: #C9C9C9;
 }
 
 .has-success-color,
@@ -993,12 +993,12 @@ progress {
 
 .has-danger-color,
 .has-danger-color:visited {
-  color: black;
+  color: #dc3545;
 }
 
 .has-danger-background-color {
-  background-color: black;
-  border-color: black;
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 
 .has-light-color,
