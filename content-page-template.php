@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home
+ * Template Name: Content page template
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
@@ -11,6 +11,9 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header();
+
+$container = get_theme_mod( 'understrap_container_type' );
+
 ?>
 
 <div class="home-banner">
@@ -44,9 +47,7 @@ get_header();
 
 			</main><!-- #main -->
 
-			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
-
+			
 		</div><!-- .row -->
 
 	</div><!-- #content -->
@@ -54,5 +55,4 @@ get_header();
 </div><!-- #page-wrapper -->
 
 <?php
-
 get_footer();
