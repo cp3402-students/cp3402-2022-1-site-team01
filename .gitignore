@@ -13,3 +13,13 @@ dist-product
 npm-debug.log
 
 /vendor/
+
+package-lock.json
+
+/css/
+
+/js/
+
+inc/editor-color-palette.json
+
+.idea/
