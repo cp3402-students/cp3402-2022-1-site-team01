@@ -15608,12 +15608,6 @@ body {
   line-height: 1.25;
 }
 
-.home-banner {
-  height: 1080px;
-  background-image: url(../img/home-banner.jpg);
-  background-size: cover;
-}
-
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -15625,6 +15619,14 @@ body {
 }
 #wrapper-navbar .top-header-holder .container {
   padding: 10px 0 10px 0;
+}
+#wrapper-navbar .top-header-holder .container .logo-holder {
+  display: block;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .col-6 {
+    text-align: center;
+  }
 }
 #wrapper-navbar .top-header-holder .container .social-media,
 #wrapper-navbar .top-header-holder .container .tablet-social-media {
@@ -15664,8 +15666,8 @@ body {
 }
 #wrapper-navbar .top-header-holder .container .contact-holder a {
   display: inline-block;
-  margin-right: 1em;
-  margin-bottom: 1em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
   color: #C9C9C9;
 }
 #wrapper-navbar .top-header-holder .container .contact-holder a .fa {
@@ -15695,7 +15697,7 @@ body {
 }
 @media (max-width: 992px) {
   #wrapper-navbar .top-header-holder .container .booking-btn {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 #wrapper-navbar #main-nav {
@@ -15720,6 +15722,25 @@ body {
 }
 #wrapper-navbar #main-nav ul li.current_page_item a {
   color: #BA181B;
+}
+
+.home-banner {
+  height: 1080px;
+  background-image: url(../img/home-banner.jpg);
+  background-size: cover;
+  background-position: top center;
+}
+@media (max-width: 992px) {
+  .home-banner {
+    background-position: top -350px center;
+  }
+}
+.home-banner h1, .home-banner .h1,
+.home-banner h2,
+.home-banner .h2 {
+  font-size: 100px;
+  font-family: "futura", futura-book;
+  color: white;
 }
 
 .has-blue-color,

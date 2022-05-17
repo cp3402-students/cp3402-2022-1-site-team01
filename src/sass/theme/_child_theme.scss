@@ -31,12 +31,6 @@ body {
   line-height: 1.25;
 }
 
-.home-banner {
-  height: 1080px;
-  background-image: url(../img/home-banner.jpg);
-  background-size: cover;
-}
-
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -49,6 +43,17 @@ body {
 
     .container {
       padding: 10px 0 10px 0;
+
+      .logo-holder {
+        display: block;
+
+      }
+
+      .col-6 {
+        @media (max-width: $lg) {
+          text-align: center;
+        }
+      }
 
       .social-media,
       .tablet-social-media {
@@ -78,8 +83,6 @@ body {
         }
       }
 
-
-
       .contact-holder {
         color: white;
         padding-top: 20px;
@@ -87,8 +90,8 @@ body {
 
         a {
           display: inline-block;
-          margin-right: 1em;
-          margin-bottom: 1em;
+          margin-right: 0.5em;
+          margin-bottom: 0.5em;
           color: $secondary;
 
           .fa {
@@ -122,7 +125,7 @@ body {
         }
 
         @media (max-width:$lg) {
-          font-size: 20px;
+          font-size: 18px;
         }
       }
     }
@@ -158,5 +161,23 @@ body {
         }
       }
     }
+  }
+}
+
+.home-banner {
+  height: 1080px;
+  background-image: url(../img/home-banner.jpg);
+  background-size: cover;
+  background-position: top center;
+
+  @media(max-width: $lg) {
+    background-position: top -350px center;
+  }
+
+  h1,
+  h2 {
+    font-size: 100px;
+    font-family: "futura", futura-book;
+    color: white;
   }
 }

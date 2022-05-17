@@ -49,22 +49,21 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 									<i class="fa fa-phone"> 0431618618</i>
 								</div>
 								<div class="address">
-									<i class='fa fa-map-marker'> Hotel Grand Chancellor first floor Pandora Room. 
-									334 Flinders Street, Townsville	</i>
+									<i class='fa fa-map-marker'> 334 Flinders St, Townsville QLD 4810</i>
 								</div>																							
 								<div class="tablet-social-media">
-									<a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
-									<a href="#"><i class="fa fa-envelope-square fa-3x"></i></a>		
+									<a href="https://www.facebook.com/tsvjazzclub"><i class="fa fa-facebook-square fa-3x"></i></a>
+									<a href="townsvillejazz@icloud.com"><i class="fa fa-envelope-square fa-3x"></i></a>		
 								</div>						
 							</div>
-							<a href="#" class="booking-btn">Book Now!</a>
+							<a href="http://localhost/jazztownsville/sign-up/" class="booking-btn">Book Now!</a>
 						</div>
 					</div>
 
 					<div class="col-3">
 						<div class="social-media">
-							<a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
-							<a href="#"><i class="fa fa-envelope-square fa-3x"></i></a>		
+							<a href="https://www.facebook.com/tsvjazzclub"><i class="fa fa-facebook-square fa-3x"></i></a>
+							<a href="townsvillejazz@icloud.com"><i class="fa fa-envelope-square fa-3x"></i></a>		
 						</div>
 					</div>
 				</div>
