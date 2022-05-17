@@ -24,6 +24,11 @@ See [deployment.md](https://github.com/cp3402-students/cp3402-2022-1-site-team01
 
 See [site.md](https://github.com/cp3402-students/cp3402-2022-1-site-team01/blob/main/site.md)
 
+## Using a Distributable Version of the Jazz Townsville Theme
+To obtain a distributable version of this theme, simply clone or zip the _[dist](https://github.com/cp3402-students/cp3402-2022-1-site-team01/tree/dist)_ branch into the _wp-content/themes_ folder of your WordPress root directory. Enjoy the Jazz Townsville theme!
+
+`git clone -b dist https://github.com/cp3402-students/cp3402-2022-1-site-team01.git jazztheme`
+
 ## Recommended Development Environments
 * [Xampp](https://www.apachefriends.org/index.html)
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
