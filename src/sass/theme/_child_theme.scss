@@ -50,7 +50,8 @@ body {
     .container {
       padding: 10px 0 10px 0;
 
-      .social-media {
+      .social-media,
+      .tablet-social-media {
         padding-top: 100px;
 
         a {
@@ -62,16 +63,22 @@ body {
           }
         }
 
-        @media (max-width: 4lg) {
+        @media (max-width: $lg) {
           display: none;
+        }
+
+        &.tablet-social-media {
+          display: none;
+
+          @media (max-width:$lg) {
+            display: inline;
+            padding-top: 0px;
+            font-size: 18px;
+          }
         }
       }
 
-      .logo-holder {
-        .logo {
-          padding: 0.25em;
-        }
-      }
+
 
       .contact-holder {
         color: white;

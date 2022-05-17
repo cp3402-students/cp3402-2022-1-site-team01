@@ -49,7 +49,8 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 									<i class='fa fa-map-marker'> Hotel Grand Chancellor first floor Pandora Room. 
 									334 Flinders Street, Townsville	</i>												
 								<div class="tablet-social-media">
-
+									<a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+									<a href="#"><i class="fa fa-envelope-square fa-3x"></i></a>		
 								</div>						
 							</div>
 							<a href="#" class="booking-btn">Book Now!</a>
