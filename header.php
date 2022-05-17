@@ -45,9 +45,13 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 					<div class="col-5">
 						<div class="reservation">
 							<div class="contact-holder">
-									<i class="fa fa-phone"> 0431618618</i>											
+								<div class="phone">
+									<i class="fa fa-phone"> 0431618618</i>
+								</div>
+								<div class="address">
 									<i class='fa fa-map-marker'> Hotel Grand Chancellor first floor Pandora Room. 
-									334 Flinders Street, Townsville	</i>												
+									334 Flinders Street, Townsville	</i>
+								</div>																							
 								<div class="tablet-social-media">
 									<a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
 									<a href="#"><i class="fa fa-envelope-square fa-3x"></i></a>		

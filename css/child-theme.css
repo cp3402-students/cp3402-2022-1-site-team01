@@ -15652,15 +15652,29 @@ body {
 @media (max-width: 992px) {
   #wrapper-navbar .top-header-holder .container .social-media.tablet-social-media,
 #wrapper-navbar .top-header-holder .container .tablet-social-media.tablet-social-media {
-    display: inline;
+    display: inline-block;
     padding-top: 0px;
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 #wrapper-navbar .top-header-holder .container .contact-holder {
   color: white;
   padding-top: 20px;
   width: 350px;
+}
+#wrapper-navbar .top-header-holder .container .contact-holder a {
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  color: #C9C9C9;
+}
+#wrapper-navbar .top-header-holder .container .contact-holder a .fa {
+  color: #C9C9C9;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .contact-holder .address {
+    display: none;
+  }
 }
 #wrapper-navbar .top-header-holder .container .booking-btn {
   font-family: "Fredericka the Great", cursive;
@@ -15678,6 +15692,11 @@ body {
 #wrapper-navbar .top-header-holder .container .booking-btn:hover {
   background: #C9C9C9;
   color: black;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .booking-btn {
+    font-size: 20px;
+  }
 }
 #wrapper-navbar #main-nav {
   border-top: 1px solid rgba(186, 24, 27, 0.5);

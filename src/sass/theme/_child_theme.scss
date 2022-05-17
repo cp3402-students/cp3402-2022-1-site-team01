@@ -71,9 +71,9 @@ body {
           display: none;
 
           @media (max-width:$lg) {
-            display: inline;
+            display: inline-block;
             padding-top: 0px;
-            font-size: 18px;
+            font-size: 15px;
           }
         }
       }
@@ -84,6 +84,23 @@ body {
         color: white;
         padding-top: 20px;
         width: 350px;
+
+        a {
+          display: inline-block;
+          margin-right: 1em;
+          margin-bottom: 1em;
+          color: $secondary;
+
+          .fa {
+            color: #C9C9C9;
+          }
+        }
+
+        @media (max-width:$lg) {
+          .address {
+            display: none;
+          }
+        }
       }
 
       .booking-btn {
@@ -102,6 +119,10 @@ body {
         &:hover {
           background: $secondary;
           color: $primary;
+        }
+
+        @media (max-width:$lg) {
+          font-size: 20px;
         }
       }
     }
