@@ -40,6 +40,6 @@ This project is licensed under the GNU General Public License v3.0.
 
 ***
 
-> _"If I could do it all again, I'd choose the same team 100 times over."_
+> _"If I had to do it all again, I'd choose the same team 100 times over."_
 > 
-> \- _Caleb Webster_
+> \- _Caleb_
