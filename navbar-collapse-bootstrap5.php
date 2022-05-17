@@ -17,7 +17,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
 	</h2>
 
-
 	<div class="<?php echo esc_attr( $container ); ?>">
 
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">

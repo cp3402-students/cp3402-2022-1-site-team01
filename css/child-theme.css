@@ -15610,34 +15610,54 @@ body {
 
 .home-banner {
   height: 1080px;
-  color: grey;
   background-image: url(../img/home-banner.jpg);
   background-size: cover;
 }
 
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 #wrapper-navbar .top-header-holder {
   height: 200px;
-  color: #C9C9C9;
-  padding-bottom: 50px;
-}
-#wrapper-navbar .top-header-holder .header-container {
   background-color: black;
+  color: white;
 }
-#wrapper-navbar .top-header-holder .header-container .logo-holder .logo {
+#wrapper-navbar .top-header-holder .container {
+  padding: 10px 0 10px 0;
+}
+#wrapper-navbar .top-header-holder .container .social-media {
+  padding-top: 100px;
+}
+#wrapper-navbar .top-header-holder .container .social-media a {
+  color: #C9C9C9;
+  text-decoration: none;
+}
+#wrapper-navbar .top-header-holder .container .social-media a:hover {
+  color: #a3a3a3;
+}
+#wrapper-navbar .top-header-holder .container .logo-holder .logo {
   padding: 0.25em;
 }
-#wrapper-navbar .top-header-holder .header-container .booking-btn {
+#wrapper-navbar .top-header-holder .container .contact-holder {
+  color: white;
+  padding-top: 20px;
+  width: 350px;
+}
+#wrapper-navbar .top-header-holder .container .booking-btn {
   font-family: "Fredericka the Great", cursive;
   color: #C9C9C9;
   font-size: 38px;
   border: 1px dotted #C9C9C9;
   display: inline-block;
+  width: 60%;
+  text-align: center;
   padding: 0.25em 0.5em;
   border-radius: 0.2em;
   cursor: pointer;
   text-decoration: none;
 }
-#wrapper-navbar .top-header-holder .header-container .booking-btn:hover {
+#wrapper-navbar .top-header-holder .container .booking-btn:hover {
   background: #C9C9C9;
   color: black;
 }
@@ -15654,6 +15674,12 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   padding: 0.5em 0.5em;
+}
+@media (max-width: 1440px) {
+  #wrapper-navbar #main-nav ul li a {
+    font-size: 18px;
+    padding: 0.25em 0.25em;
+  }
 }
 #wrapper-navbar #main-nav ul li.current_page_item a {
   color: #BA181B;

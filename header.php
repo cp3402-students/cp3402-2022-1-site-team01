@@ -33,7 +33,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<header id="wrapper-navbar">
 
 		<div class="top-header-holder">	
-			<div class="header-container">
+			<div class="container">
 			 	<div class="row">
 					<div class="col-4">
 							<div class="logo-holder">
@@ -42,21 +42,24 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 							</div>
 					</div>
 
-					<div class="col-6">
+					<div class="col-5">
 						<div class="reservation">
 							<div class="contact-holder">
-								<div class="phone">0431618618</div>
-								<div class="address">Hotel Grand Chancellor first floor Pandora Room. 334 Flinders Street, 
-								Townsville</div>
+									<i class="fa fa-phone"> 0431618618</i>											
+									<i class='fa fa-map-marker'> Hotel Grand Chancellor first floor Pandora Room. 
+									334 Flinders Street, Townsville	</i>												
+								<div class="tablet-social-media">
+
+								</div>						
 							</div>
 							<a href="#" class="booking-btn">Book Now!</a>
 						</div>
 					</div>
 
-					<div class="col-2">
-						<div class="social-meida">
-							<i class="fa fa-facebook-square"></i>
-							<i class="fa fa-envelope-square"></i>				
+					<div class="col-3">
+						<div class="social-media">
+							<a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+							<a href="#"><i class="fa fa-envelope-square fa-3x"></i></a>		
 						</div>
 					</div>
 				</div>
