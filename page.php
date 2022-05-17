@@ -19,8 +19,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div class="home-banner">
-</div>
+<!-- <div class="home-banner">
+</div> -->
 
 <div class="wrapper" id="page-wrapper">
 
