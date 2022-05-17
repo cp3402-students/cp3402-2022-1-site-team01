@@ -15636,6 +15636,11 @@ body {
 #wrapper-navbar .top-header-holder .container .social-media a:hover {
   color: #a3a3a3;
 }
+@media (max-width: 4lg) {
+  #wrapper-navbar .top-header-holder .container .social-media {
+    display: none;
+  }
+}
 #wrapper-navbar .top-header-holder .container .logo-holder .logo {
   padding: 0.25em;
 }

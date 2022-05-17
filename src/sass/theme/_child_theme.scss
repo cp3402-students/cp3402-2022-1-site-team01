@@ -61,6 +61,10 @@ body {
             color: darken($secondary, $amount: 15%);
           }
         }
+
+        @media (max-width: 4lg) {
+          display: none;
+        }
       }
 
       .logo-holder {
