@@ -3,7 +3,7 @@
 ### A description of the Jazz Townsville theme development and deployment workflow.
 
 #### Step 1. Setup WordPress
-Your development of the Jazz Townsville theme begins with a WordPress installation populated with the [WordPress Theme Test Data](https://github.com/WPTT/theme-test-data). Simply clone or zip the [test data repository](https://github.com/WPTT/theme-test-data) and import _themeunittestdata.wordpress.xml_ into a __clean WordPress installation__.
+Your development of the Jazz Townsville theme begins with a WordPress installation populated with the [WordPress Theme Test Data](https://github.com/WPTT/theme-test-data). Simply clone or zip the [test data repository](https://github.com/WPTT/theme-test-data) and import _themeunittestdata.wordpress.xml_ into a __clean WordPress installation__ Alternatively, you can get the xml content [here](https://raw.githubusercontent.com/WPTT/theme-unit-test/master/themeunittestdata.wordpress.xml). A helpful guide to the WordPress test data can be found [here](https://www.youtube.com/watch?v=eGT0Z3oafFA&ab_channel=CoreySchafer).
 
 #### Step 2. Clone Parent and Jazz Townsville Theme
 To begin developing the theme, you need the parent understrap theme and our Jazz Townsville theme. Clone the official [Understrap repository](https://github.com/understrap/understrap) into a folder called _understrap_ residing in the _wp-content/themes_ folder of your WordPress root directory (or download a zip instead). With the parent theme installed, clone our Jazz Townsville repository (cp3402-2022-1-site-team01) into a folder within _wp-content/themes_. Name this folder whatever you wish.
