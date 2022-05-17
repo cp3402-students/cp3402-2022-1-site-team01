@@ -48,4 +48,4 @@ jobs:
             rm site.md
             rm theme.md
             cd ../../../  # jazztownsville (wp root)
-            wp theme activate jazztheme
+            wp theme activate jazztheme-child

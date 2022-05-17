@@ -21,9 +21,3 @@ Jazz Townsille requires the latest version of [WordPress](https://wordpress.org/
 5. Access WordPress dashboard as usual at  <code>http://<span></span>localhost/yours-site-name/wp-admin/</code>
 6. Enjoy!
 
-## Site Adminstrations
-Admin user details for local development:
-| Username:     | root            | 
-| ------------- |:---------------:| 
-| Password:     | jazztownsville.1| 
-
