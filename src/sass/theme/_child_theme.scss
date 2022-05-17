@@ -1,19 +1,183 @@
+// .page .entry-title{
+//     padding-top: 40px;
+// }
+
+// #main-nav {
+//   position:fixed;
+//   padding: 10px 0px 10px 0px;
+//   top:0;
+//   right:0;
+//   left:0;
+//   z-index:99;
+// }
+
+@font-face {
+  font-family: futura-book;
+  src: url(../fonts/futura-book.ttf);
+}
+
+$primary: black; // Once we've changed the value, we'll also make it the primary brand color.
+$secondary: #C9C9C9;
+$refinement: #BA181B;
+
+$xl: 1440px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+body {
+  font-family: 'futura-book', futura-book;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
 .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 
-.page .entry-title{
-    padding-top: 40px;
+#wrapper-navbar {
+  .top-header-holder {
+    height: 200px;
+    background-color: $primary;
+    color: white;
+
+    .container {
+      padding: 10px 0 10px 0;
+
+      .logo-holder {
+        display: block;
+
+      }
+
+      .col-6 {
+        @media (max-width: $lg) {
+          text-align: center;
+        }
+      }
+
+      .social-media,
+      .tablet-social-media {
+        padding-top: 100px;
+
+        a {
+          color: $secondary;
+          text-decoration: none;
+
+          &:hover {
+            color: darken($secondary, $amount: 15%);
+          }
+        }
+
+        @media (max-width: $lg) {
+          display: none;
+        }
+
+        &.tablet-social-media {
+          display: none;
+
+          @media (max-width:$lg) {
+            display: inline-block;
+            padding-top: 0px;
+            font-size: 15px;
+          }
+        }
+      }
+
+      .contact-holder {
+        color: white;
+        padding-top: 20px;
+        width: 350px;
+
+        a {
+          display: inline-block;
+          margin-right: 0.5em;
+          margin-bottom: 0.5em;
+          color: $secondary;
+
+          .fa {
+            color: #C9C9C9;
+          }
+        }
+
+        @media (max-width:$lg) {
+          .address {
+            display: none;
+          }
+        }
+      }
+
+      .booking-btn {
+        font-family: 'Fredericka the Great', cursive;
+        color: $secondary;
+        font-size: 38px;
+        border: 1px dotted $secondary;
+        display: inline-block;
+        width: 60%;
+        text-align: center;
+        padding: 0.25em 0.5em;
+        border-radius: 0.2em;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+          background: $secondary;
+          color: $primary;
+        }
+
+        @media (max-width:$lg) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  // margin-bottom: -360px;
+
+  #main-nav {
+    border-top: 1px solid rgba($refinement, 0.5);
+    border-bottom: 1px solid rgba($refinement, 0.5);
+
+    ul {
+      flex: 1;
+      justify-content: space-between;
+
+      li {
+        a {
+          font-weight: 500;
+          font-size: 20px;
+          text-transform: uppercase;
+          padding: .5em 0.5em;
+
+          @media (max-width: $xl) {
+            font-size: 18px;
+            padding: .25em 0.25em;
+          }
+        }
+
+        &.current_page_item {
+          a {
+            color: $refinement;
+          }
+        }
+      }
+    }
+  }
 }
 
-#main-nav {
-  position:fixed;
-  padding: 10px 0px 10px 0px;
-  top:0;
-  right:0;
-  left:0;
-  z-index:99;
+.home-banner {
+  height: 1080px;
+  background-image: url(../img/home-banner.jpg);
+  background-size: cover;
+  background-position: top center;
+
+  @media(max-width: $lg) {
+    background-position: top -350px center;
+  }
+
+  h1,
+  h2 {
+    font-size: 100px;
+    font-family: "futura", futura-book;
+    color: white;
+  }
 }
-
-
-

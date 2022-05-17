@@ -16,9 +16,9 @@ npm-debug.log
 
 package-lock.json
 
-css/
+/css/
 
-js/
+/js/
 
 inc/editor-color-palette.json
 
