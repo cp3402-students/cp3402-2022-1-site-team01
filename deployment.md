@@ -31,7 +31,10 @@ Before you make any changes, create a new _Git branch_ to do your work on. Ensur
 #### Step 7. Creating a pull request
 After making your changes and pushing them to our repository, you want them to actually be incorporated into our project instead of being left all by themselves in a lonely branch. We'd love to merge your branch with our _main_ branch, but first you need to make a _pull request_. Head over to our GitHub repository and go to the "Pull Requests" tab. Click on the green button that says "New Pull Request", then select _your branch_ on the right of the small arrow and _main_ on the left. Don't worry if it says that it can't automatically merge, we'll sort that out later. Just hit the green button again. Enter a title and description outlining what you have changed, and add us as reviewers on the right side. Finally, hit the down arrow next to the green button, and create a draft pull request. Fantastic!
 
-#### Step 8. (Optional) pushing to the staging branch
+#### Step 8. Pushing to the staging branch
 In order for us to see your changes easily, you can make a pull request to the "staging" branch. Just repeat Step 7, but merge to _staging_ instead of _main_. Add us for review, then once your PR is reviewed, your changes will be automatically be loaded into our [Staging Website](http://54.79.204.77/jazztownsville). The staging site allows us to see what your changes look like on the actual Jazz Townsville site.
+
+#### Step 9. Deploying to the production branch
+To push to the production branch, simply go to the "Actions" tab in this repository, select the "Deploy to Production" workflow, and manually run it from the main branch using the "Run workflow" button. This will automatically update the Jazz Townsville [Production Website](http://3.25.82.197/jazztownsville/) with a distributable version of the Jazz Townsville theme. Note that this is done via the _dist_ branch, which is automatically updated with a distributable compilation of the child theme whenever there is a push to main, so any changes _must be merged to main first._
 
 And that's it! You've now contributed something to the Jazz Townsville Theme. We look forward to seeing what you've done!
