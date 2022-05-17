@@ -37,7 +37,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 			 	<div class="row">
 					<div class="col-4">
 							<div class="logo-holder">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>./img/jazz-logo.png" 
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jazz-logo.png" 
 								alt="Jazz Townsville Logo" width="250px">
 							</div>
 					</div>
