@@ -212,8 +212,10 @@ body {
 }
 
 #wrapper-footer {
-  height: 200px;
-  background-color: $primary;
+  height: 80px;
+  background: $primary;
+  color: $secondary;
+  text-align: center;
   position: relative;
 }
 
