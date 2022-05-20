@@ -1,11 +1,8 @@
 <?php
 /**
- * The template for displaying all pages
+ * Template Name: Index page template
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
+ * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
  * @package Understrap
  */
@@ -19,11 +16,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<!-- <div class="home-banner">
-
-</div> -->
-
-    
+<div class="home-banner">
+    <h1>22 May Love 4 Swing</h1>
+    <h2> Terra Grimard on Keys and Vocals, Andrew Dajski on Trumpet, 
+		Bob Passmore on Sax, Doug Lye on Drums</h2>
+	<a href="http://localhost/jazztownsville/sign-up/" class="join-btn">Join now!</a>
+</div>
 
 <div class="wrapper" id="page-wrapper">
 
@@ -47,7 +45,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			</main><!-- #main -->
 
-			
+
 		</div><!-- .row -->
 
 	</div><!-- #content -->
@@ -55,4 +53,5 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #page-wrapper -->
 
 <?php
+
 get_footer();

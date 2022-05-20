@@ -1,6 +1,6 @@
-// .page .entry-title{
-//     padding-top: 40px;
-// }
+.entry-header {
+  display: none;
+}
 
 // #main-nav {
 //   position:fixed;
@@ -165,25 +165,87 @@ body {
 }
 
 .home-banner {
-  height: 1080px;
-  background-image: url(../img/home-banner.jpg);
+  height: 540px;
+  padding-top: 100px;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/banner-img.jpg);
   background-size: cover;
   background-position: top center;
+  text-align: center;
+  color: $secondary;
+  text-shadow: 2px 2px $primary;
+  font-size: 200px;
+  font-family: 'Fredericka the Great',
+    cursive;
 
-  @media(max-width: $lg) {
-    background-position: top -350px center;
-  }
-
-  h1,
-  h2 {
+  .join-btn {
+    color: $secondary;
+    padding-bottom: 100px;
     font-size: 100px;
-    font-family: "futura", futura-book;
-    color: white;
+    display: inline-block;
+    width: 60%;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: $refinement;
+    }
+
   }
 }
 
-.wrapper{
-  background-image: url(../img/home-banner.jpg);
-  background-size: cover;
-  background-position: top center;
+
+
+
+.wrapper {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
 }
+
+.entry-content {
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.5%;
+  color: $secondary;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#wrapper-footer {
+  height: 80px;
+  background: $primary;
+  color: $secondary;
+  text-align: center;
+  position: relative;
+}
+
+.table {
+  color: $secondary;
+}
+
+.wp-block-table .has-fixed-layout {
+  table-layout: fixed;
+  width: 100%;
+  color: $secondary  !important;
+}
+
+.wp-block-button__link {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $refinement;
+  font-size: 12px;
+  color: $refinement  !important;
+}
+
+.wp-block-latest-posts__featured-image {
+  padding-left: 50px;
+
+  @media (max-width:$lg) {
+    padding-left: 0px;
+  }
+}
+
