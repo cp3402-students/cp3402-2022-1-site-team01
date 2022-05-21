@@ -243,21 +243,14 @@ body {
   }
 }
 
-// .wp-block-navigation__responsive-container {
-//   border-top: 1px solid $refinement;
-//   border-bottom: 1px solid $refinement;
-//   padding: 15px;
-//   font-size: 30px;
-
-//   // @media (max-width:$lg) {
-//   //   padding: 0px;
-//   //   margin-bottom: 10px;
-//   // }
-// }
-
 .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
   margin-bottom: 50px;
   border-bottom: 1px solid $refinement;
   padding: 15px;
   font-size: 20px;
+
+  @media (max-width:$lg) {
+    padding: 0px;
+    margin-bottom: 10px;
+  }
 }
