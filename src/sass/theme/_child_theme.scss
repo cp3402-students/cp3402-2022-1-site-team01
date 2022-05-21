@@ -194,6 +194,9 @@ body {
   }
 }
 
+
+
+
 .wrapper {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
@@ -211,8 +214,10 @@ body {
 }
 
 #wrapper-footer {
-  height: 200px;
-  background-color: $primary;
+  height: 80px;
+  background: $primary;
+  color: $secondary;
+  text-align: center;
   position: relative;
 }
 
@@ -242,6 +247,7 @@ body {
     padding-left: 0px;
   }
 }
+
 
 .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
   margin-bottom: 50px;

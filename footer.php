@@ -20,14 +20,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="title-holder">
 		<div class="container">
 			<h2>
-				<span>asdwd</span>
+				<span>Copyright &copy; 2022 by Jazztownsville</span>
 			</h2>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-1"></div>
-				<div class="col-lg-11"></div>
-			</div>
 		</div>
 	</div>
 

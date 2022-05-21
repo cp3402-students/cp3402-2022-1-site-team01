@@ -20,11 +20,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <!-- <div class="home-banner">
-    <h1>22 May Love 4 Swing</h1>
-    <h2> Terra Grimard on Keys and Vocals, Andrew Dajski on Trumpet, Bob Passmore on Sax, Doug Lye on Drums
-</h2> -->
 
-</div>
+</div> -->
+
+    
 
 <div class="wrapper" id="page-wrapper">
 
