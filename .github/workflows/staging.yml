@@ -35,6 +35,6 @@ jobs:
             cd htdocs/jazztownsville/wp-content/themes/jazztheme-child
             ls -h
             git pull
-            npm run dist
+
             cd ../../../  # jazztownsville (wp root)
             wp theme activate jazztheme-child
