@@ -4,6 +4,9 @@ name: Deploy to Production
 
 # Controls when the workflow will run
 on:
+  # Triggers the workflow on push or pull request events but only for the production branch
+  push:
+    branches: [ production ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -29,8 +32,8 @@ jobs:
           script: |
             whoami
             pwd
-            cd htdocs/jazztownsville/wp-content/themes/jazztheme
+            cd htdocs/jazztownsville/wp-content/themes/jazztheme-child
             ls -h
             git pull
-            cd ../../../
-            wp theme activate jazztheme
+            cd ../../../  # jazztownsville (wp root)
+            wp theme activate jazztheme-child
