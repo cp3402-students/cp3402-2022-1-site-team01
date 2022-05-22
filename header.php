@@ -56,7 +56,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 									<a href="townsvillejazz@icloud.com"><i class="fa fa-envelope-square fa-3x"></i></a>		
 								</div>						
 							</div>
-							<a href="http://localhost/jazztownsville/sign-up/" class="booking-btn">Book Now!</a>
+							<a href="http://54.79.204.77/jazztownsville/events/" class="booking-btn">Book Now!</a>
 						</div>
 					</div>
 

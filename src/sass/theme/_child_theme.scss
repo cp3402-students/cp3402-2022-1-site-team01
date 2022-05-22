@@ -207,7 +207,6 @@ body {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
 }
 
 .entry-content {
@@ -255,3 +254,15 @@ body {
   }
 }
 
+
+.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+  margin-bottom: 50px;
+  border-bottom: 1px solid $refinement;
+  padding: 15px;
+  font-size: 20px;
+
+  @media (max-width:$lg) {
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+}
