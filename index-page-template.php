@@ -20,7 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <h1>22 May Love 4 Swing</h1>
     <h2> Terra Grimard on Keys and Vocals, Andrew Dajski on Trumpet, 
 		Bob Passmore on Sax, Doug Lye on Drums</h2>
-	<a href="http://54.79.204.77/jazztownsville/sign-up/" class="join-btn">Join now!</a>
+	<a href="http://3.25.82.197/jazztownsville/sign-up/" class="join-btn">Join now!</a>
 </div>
 
 <div class="wrapper" id="page-wrapper">
