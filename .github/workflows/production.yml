@@ -29,8 +29,9 @@ jobs:
           script: |
             whoami
             pwd
-            cd htdocs/jazztownsville/wp-content/themes/jazztheme
+            cd htdocs/jazztownsville/wp-content/themes/jazztheme-child
             ls -h
             git pull
-            cd ../../../
-            wp theme activate jazztheme
+            npm run dist
+            cd ../../../  # jazztownsville (wp root)
+            wp theme activate jazztheme-child

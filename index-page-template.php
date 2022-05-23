@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home
+ * Template Name: Index page template
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
@@ -11,12 +11,16 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header();
+
+$container = get_theme_mod( 'understrap_container_type' );
+
 ?>
 
 <div class="home-banner">
     <h1>22 May Love 4 Swing</h1>
-    <h2> Terra Grimard on Keys and Vocals, Andrew Dajski on Trumpet, Bob Passmore on Sax, Doug Lye on Drums
-</h2>
+    <h2> Terra Grimard on Keys and Vocals, Andrew Dajski on Trumpet, 
+		Bob Passmore on Sax, Doug Lye on Drums</h2>
+	<a href="http://3.25.82.197/jazztownsville/sign-up/" class="join-btn">Join now!</a>
 </div>
 
 <div class="wrapper" id="page-wrapper">
@@ -24,9 +28,6 @@ get_header();
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
-
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
 
@@ -44,8 +45,6 @@ get_header();
 
 			</main><!-- #main -->
 
-			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
 
 		</div><!-- .row -->
 
