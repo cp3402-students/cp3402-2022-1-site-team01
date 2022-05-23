@@ -17087,8 +17087,246 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
-p {
-  color: red !important;
+.entry-header {
+  display: none;
+}
+
+@font-face {
+  font-family: futura-book;
+  src: url(../fonts/futura-book.ttf);
+}
+body {
+  font-family: "futura-book", futura-book;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#wrapper-navbar .top-header-holder {
+  height: 200px;
+  background-color: black;
+  color: white;
+}
+#wrapper-navbar .top-header-holder .container {
+  padding: 10px 0 10px 0;
+}
+#wrapper-navbar .top-header-holder .container .logo-holder {
+  display: block;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .col-6 {
+    text-align: center;
+  }
+}
+#wrapper-navbar .top-header-holder .container .social-media,
+#wrapper-navbar .top-header-holder .container .tablet-social-media {
+  padding-top: 100px;
+}
+#wrapper-navbar .top-header-holder .container .social-media a,
+#wrapper-navbar .top-header-holder .container .tablet-social-media a {
+  color: #C9C9C9;
+  text-decoration: none;
+}
+#wrapper-navbar .top-header-holder .container .social-media a:hover,
+#wrapper-navbar .top-header-holder .container .tablet-social-media a:hover {
+  color: #a3a3a3;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .social-media,
+#wrapper-navbar .top-header-holder .container .tablet-social-media {
+    display: none;
+  }
+}
+#wrapper-navbar .top-header-holder .container .social-media.tablet-social-media,
+#wrapper-navbar .top-header-holder .container .tablet-social-media.tablet-social-media {
+  display: none;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .social-media.tablet-social-media,
+#wrapper-navbar .top-header-holder .container .tablet-social-media.tablet-social-media {
+    display: inline-block;
+    padding-top: 0px;
+    font-size: 15px;
+  }
+}
+#wrapper-navbar .top-header-holder .container .contact-holder {
+  color: white;
+  padding-top: 20px;
+  width: 350px;
+}
+#wrapper-navbar .top-header-holder .container .contact-holder a {
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  color: #C9C9C9;
+}
+#wrapper-navbar .top-header-holder .container .contact-holder a .fa {
+  color: #C9C9C9;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .contact-holder .address {
+    display: none;
+  }
+}
+#wrapper-navbar .top-header-holder .container .booking-btn {
+  font-family: "Fredericka the Great", cursive;
+  color: #C9C9C9;
+  font-size: 38px;
+  border: 1px dotted #C9C9C9;
+  display: inline-block;
+  width: 60%;
+  text-align: center;
+  padding: 0.25em 0.5em;
+  border-radius: 0.2em;
+  cursor: pointer;
+  text-decoration: none;
+}
+#wrapper-navbar .top-header-holder .container .booking-btn:hover {
+  background: #C9C9C9;
+  color: black;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .booking-btn {
+    font-size: 18px;
+  }
+}
+#wrapper-navbar #main-nav {
+  border-top: 1px solid rgba(186, 24, 27, 0.5);
+  border-bottom: 1px solid rgba(186, 24, 27, 0.5);
+}
+#wrapper-navbar #main-nav ul {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#wrapper-navbar #main-nav ul li a {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 0.5em 0.5em;
+}
+@media (max-width: 1440px) {
+  #wrapper-navbar #main-nav ul li a {
+    font-size: 18px;
+    padding: 0.25em 0.25em;
+  }
+}
+#wrapper-navbar #main-nav ul li.current_page_item a {
+  color: #BA181B;
+}
+
+.home-banner {
+  height: 540px;
+  padding-top: 100px;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-img.jpg);
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
+  color: #C9C9C9;
+  text-shadow: 2px 2px black;
+  font-size: 200px;
+  font-family: "Fredericka the Great", cursive;
+}
+.home-banner .join-btn {
+  color: #C9C9C9;
+  padding-bottom: 100px;
+  font-size: 100px;
+  display: inline-block;
+  width: 60%;
+  cursor: pointer;
+  text-decoration: none;
+}
+.home-banner .join-btn:hover {
+  color: #BA181B;
+}
+
+.btn-secondary {
+  color: #ffff;
+  background-color: #BA181B;
+  border-color: #0B090A;
+}
+
+.wrapper {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.entry-content {
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.5%;
+  color: #C9C9C9;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#wrapper-footer {
+  height: 80px;
+  background: black;
+  color: #C9C9C9;
+  text-align: center;
+  position: relative;
+}
+
+.table, .wp-block-table table {
+  color: #C9C9C9;
+}
+
+.wp-block-table .has-fixed-layout {
+  table-layout: fixed;
+  width: 100%;
+  color: #C9C9C9 !important;
+}
+
+.wp-block-button__link {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #BA181B;
+  font-size: 12px;
+  color: #BA181B !important;
+}
+
+.wp-block-latest-posts__featured-image {
+  padding-left: 50px;
+}
+@media (max-width: 992px) {
+  .wp-block-latest-posts__featured-image {
+    padding-left: 0px;
+  }
+}
+
+.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #BA181B;
+  padding: 15px;
+  font-size: 20px;
+}
+@media (max-width: 992px) {
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+.wp-block-jetpack-contact-form {
+  margin: auto;
+}
+
+.nav-link, .nav-link:hover {
+  color: white !important;
+}
+
+nav {
+  background-color: black !important;
 }
 
 /*# sourceMappingURL=theme.css.map */

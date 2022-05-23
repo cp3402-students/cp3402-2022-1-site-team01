@@ -32,12 +32,12 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<header id="wrapper-navbar">
 
-		<div class="top-header-holder">	
+		<div class="top-header-holder">
 			<div class="container">
 			 	<div class="row">
 					<div class="col-4">
 							<div class="logo-holder">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jazz-logo.png" 
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jazz-logo.png"
 								alt="Jazz Townsville Logo" width="250px">
 							</div>
 					</div>
@@ -50,20 +50,20 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 								</div>
 								<div class="address">
 									<i class='fa fa-map-marker'> 334 Flinders St, Townsville QLD 4810</i>
-								</div>																							
+								</div>
 								<div class="tablet-social-media">
 									<a href="https://www.facebook.com/tsvjazzclub"><i class="fa fa-facebook-square fa-3x"></i></a>
-									<a href="townsvillejazz@icloud.com"><i class="fa fa-envelope-square fa-3x"></i></a>		
-								</div>						
+									<a href="townsvillejazz@icloud.com"><i class="fa fa-envelope-square fa-3x"></i></a>
+								</div>
 							</div>
-							<a href="http://3.25.82.197/jazztownsville/events/" class="booking-btn">Book Now!</a>
+							<a href="<?php get_site_url()?>/jazztownsville/events/" class="booking-btn">Book Now!</a>
 						</div>
 					</div>
 
 					<div class="col-3">
 						<div class="social-media">
 							<a href="https://www.facebook.com/tsvjazzclub"><i class="fa fa-facebook-square fa-3x"></i></a>
-							<a href="townsvillejazz@icloud.com"><i class="fa fa-envelope-square fa-3x"></i></a>		
+							<a href="townsvillejazz@icloud.com"><i class="fa fa-envelope-square fa-3x"></i></a>
 						</div>
 					</div>
 				</div>
@@ -71,7 +71,7 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 		</div>
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-		
+
 		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
 
 	</header><!-- #wrapper-navbar end -->
